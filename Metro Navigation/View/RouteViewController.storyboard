@@ -59,13 +59,21 @@
                                     <constraint firstItem="DR5-Tw-Seh" firstAttribute="top" secondItem="bF5-mu-hyh" secondAttribute="top" constant="8" id="r6f-cj-cfI"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Hq-CkM">
+                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="agd-Hq-CkM" secondAttribute="trailing" id="0EL-DQ-ayY"/>
                             <constraint firstItem="bF5-mu-hyh" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="4Ap-F6-KdE"/>
                             <constraint firstAttribute="trailing" secondItem="bF5-mu-hyh" secondAttribute="trailing" id="4bj-7S-WZP"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="top" secondItem="JFY-l8-qGI" secondAttribute="bottom" id="4yw-R9-gJB"/>
+                            <constraint firstItem="agd-Hq-CkM" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="MaK-aM-yaM"/>
                             <constraint firstItem="bF5-mu-hyh" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" id="bwN-QI-nEC"/>
+                            <constraint firstItem="yxH-ti-Vte" firstAttribute="top" secondItem="agd-Hq-CkM" secondAttribute="bottom" id="fyA-CW-o6y"/>
+                            <constraint firstItem="agd-Hq-CkM" firstAttribute="top" secondItem="bF5-mu-hyh" secondAttribute="bottom" id="l1m-aL-9g4"/>
                             <constraint firstAttribute="trailing" secondItem="PD5-0X-UXs" secondAttribute="trailing" id="xij-n6-hJl"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="yKj-j3-LyL"/>
                         </constraints>
