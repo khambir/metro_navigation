@@ -12,10 +12,29 @@ class RouteViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var routeInfoView: UIView!
+    @IBOutlet weak var routePanelView: RoutePanelView!
     
     // MARK: - UIViewController functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        routePanelView.delegate = self
+    }
+    
+}
+
+// MARK: - RoutePanelViewDelegate functions
+extension RouteViewController: RoutePanelViewDelegate {
+
+    func routePanelViewToButtonDidTap(_ routePanelView: RoutePanelView) {
+        
+    }
+    
+    func routePanelViewFromButtonDidTap(_ routePanelView: RoutePanelView) {
+        
+    }
+    
+    func routePanelViewSwapButtonDidTap(_ routePanelView: RoutePanelView) {
+        
     }
     
 }

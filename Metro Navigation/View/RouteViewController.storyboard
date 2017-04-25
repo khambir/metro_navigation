@@ -73,6 +73,7 @@
                     <navigationItem key="navigationItem" title="Metro Navigation" id="ku8-aK-DwF"/>
                     <connections>
                         <outlet property="routeInfoView" destination="bF5-mu-hyh" id="bG5-wy-Fsg"/>
+                        <outlet property="routePanelView" destination="PD5-0X-UXs" id="N7k-9G-u7T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SuA-as-Ypd" userLabel="First Responder" sceneMemberID="firstResponder"/>
