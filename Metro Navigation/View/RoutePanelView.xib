@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoutePanelView" customModule="Metro_Navigation" customModuleProvider="target">
+            <connections>
+                <outlet property="fromButton" destination="WJA-Ai-ePn" id="55j-R3-MI6"/>
+                <outlet property="toButton" destination="9zr-eQ-Bwa" id="FuC-E7-SmI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-Qz-ZyB">
+                    <rect key="frame" x="0.0" y="0.0" width="337" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJA-Ai-ePn">
+                            <rect key="frame" x="0.0" y="0.0" width="146.5" height="44"/>
+                            <color key="backgroundColor" red="0.95332289800437942" green="0.96276173857868019" blue="0.96276173857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="From">
+                                <color key="titleColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="fromButtonAction:" destination="-1" eventType="touchUpInside" id="7Uv-3H-UlJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJN-0D-PaQ">
+                            <rect key="frame" x="146.5" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="0.95332289800437942" green="0.96276173857868019" blue="0.96276173857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="a1M-w9-Z7r"/>
+                            </constraints>
+                            <state key="normal" image="arrows_icon">
+                                <color key="titleColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="swap:" destination="-1" eventType="touchUpInside" id="JNF-o1-WB2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zr-eQ-Bwa">
+                            <rect key="frame" x="190.5" y="0.0" width="146.5" height="44"/>
+                            <color key="backgroundColor" red="0.95332289800437942" green="0.96276173857868019" blue="0.96276173857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="To">
+                                <color key="titleColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="toButtonAction:" destination="-1" eventType="touchUpInside" id="QGl-dr-6BT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="WJA-Ai-ePn" firstAttribute="width" secondItem="9zr-eQ-Bwa" secondAttribute="width" id="z9h-4W-4AR"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.61171489950000002" green="0.61572641130000005" blue="0.61169314379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aJr-Qz-ZyB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="68F-OO-wX8"/>
+                <constraint firstAttribute="trailing" secondItem="aJr-Qz-ZyB" secondAttribute="trailing" id="86p-We-yvR"/>
+                <constraint firstAttribute="bottom" secondItem="aJr-Qz-ZyB" secondAttribute="bottom" constant="1" id="dHQ-iD-HSq"/>
+                <constraint firstItem="aJr-Qz-ZyB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gub-OC-vl6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="14.5" y="-251"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrows_icon" width="25" height="25"/>
+    </resources>
+</document>
