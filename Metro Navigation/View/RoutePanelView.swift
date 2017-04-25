@@ -8,7 +8,16 @@
 
 import UIKit
 
+protocol RoutePanelViewDelegate: class {
+    func routePanelViewFromButtonDidTap(_ routePanelView: RoutePanelView)
+    func routePanelViewToButtonDidTap(_ routePanelView: RoutePanelView)
+    func routePanelViewSwapButtonDidTap(_ routePanelView: RoutePanelView)
+}
+
 class RoutePanelView: UIView {
+    
+    // MARK: - Properties
+    internal weak var delegate: RoutePanelViewDelegate?
     
     // MARK: - Outlets
     @IBOutlet weak var fromButton: UIButton!
@@ -46,15 +55,15 @@ class RoutePanelView: UIView {
 extension RoutePanelView {
 
     @IBAction func fromButtonAction(_ sender: UIButton) {
-        
+        delegate?.routePanelViewFromButtonDidTap(self)
     }
     
     @IBAction func toButtonAction(_ sender: UIButton) {
-        
+        delegate?.routePanelViewToButtonDidTap(self)
     }
     
     @IBAction func swap(_ sender: UIButton) {
-        
+        delegate?.routePanelViewSwapButtonDidTap(self)
     }
     
 }
