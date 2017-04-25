@@ -12,6 +12,8 @@
 		F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */; };
 		F5BACBF21EAEFE780081A84B /* RouteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */; };
 		F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */; };
+		F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */; };
+		F5BACBF81EAEFFDA0081A84B /* SearchTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F5BACBE71EAEFB450081A84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RouteViewController.storyboard; sourceTree = "<group>"; };
 		F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
+		F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchTableViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */,
+				F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */,
+				F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */,
 				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -156,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BACBF81EAEFFDA0081A84B /* SearchTableViewController.storyboard in Resources */,
 				F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */,
 				F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */,
 				F5BACBF21EAEFE780081A84B /* RouteViewController.storyboard in Resources */,
@@ -170,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */,
+				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
 				F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
