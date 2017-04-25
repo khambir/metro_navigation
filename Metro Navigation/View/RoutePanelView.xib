@@ -39,9 +39,8 @@
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="a1M-w9-Z7r"/>
                             </constraints>
-                            <state key="normal" image="arrows_icon">
-                                <color key="titleColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </state>
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="arrows_icon"/>
                             <connections>
                                 <action selector="swap:" destination="-1" eventType="touchUpInside" id="JNF-o1-WB2"/>
                             </connections>

@@ -28,15 +28,52 @@
                                     <constraint firstAttribute="height" constant="44" id="8cM-Cw-WHo"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF5-mu-hyh">
+                                <rect key="frame" x="0.0" y="108" width="375" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-Tw-Seh">
+                                        <rect key="frame" x="8" y="8" width="359" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                        <color key="textColor" red="0.97598085869999995" green="0.98564403550000002" blue="0.98564403550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrive at 4:09 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-zp-YIh">
+                                        <rect key="frame" x="8" y="58" width="359" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="YaK-Qd-ldQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.21329966187477112" green="0.45000636577606201" blue="0.866260826587677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WSy-zp-YIh" firstAttribute="top" secondItem="DR5-Tw-Seh" secondAttribute="bottom" id="15y-JW-6tR"/>
+                                    <constraint firstAttribute="height" constant="88" id="8Ck-sE-nCY"/>
+                                    <constraint firstAttribute="bottom" secondItem="WSy-zp-YIh" secondAttribute="bottom" constant="8" id="TsM-YH-hfr"/>
+                                    <constraint firstItem="WSy-zp-YIh" firstAttribute="leading" secondItem="bF5-mu-hyh" secondAttribute="leading" constant="8" id="az2-yB-Oac"/>
+                                    <constraint firstAttribute="trailing" secondItem="WSy-zp-YIh" secondAttribute="trailing" constant="8" id="gvB-F1-IPb"/>
+                                    <constraint firstAttribute="trailing" secondItem="DR5-Tw-Seh" secondAttribute="trailing" constant="8" id="lpd-TK-nJW"/>
+                                    <constraint firstItem="DR5-Tw-Seh" firstAttribute="leading" secondItem="bF5-mu-hyh" secondAttribute="leading" constant="8" id="qYQ-GL-sFS"/>
+                                    <constraint firstItem="DR5-Tw-Seh" firstAttribute="top" secondItem="bF5-mu-hyh" secondAttribute="top" constant="8" id="r6f-cj-cfI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bF5-mu-hyh" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="4Ap-F6-KdE"/>
+                            <constraint firstAttribute="trailing" secondItem="bF5-mu-hyh" secondAttribute="trailing" id="4bj-7S-WZP"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="top" secondItem="JFY-l8-qGI" secondAttribute="bottom" id="4yw-R9-gJB"/>
+                            <constraint firstItem="bF5-mu-hyh" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" id="bwN-QI-nEC"/>
                             <constraint firstAttribute="trailing" secondItem="PD5-0X-UXs" secondAttribute="trailing" id="xij-n6-hJl"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="yKj-j3-LyL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Metro Navigation" id="ku8-aK-DwF"/>
+                    <connections>
+                        <outlet property="routeInfoView" destination="bF5-mu-hyh" id="bG5-wy-Fsg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SuA-as-Ypd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

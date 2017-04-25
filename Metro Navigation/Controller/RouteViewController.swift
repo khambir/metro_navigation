@@ -10,6 +10,9 @@ import UIKit
 
 class RouteViewController: UIViewController {
     
+    // MARK: - Outlets
+    @IBOutlet weak var routeInfoView: UIView!
+    
     // MARK: - UIViewController functions
     override func viewDidLoad() {
         super.viewDidLoad()
