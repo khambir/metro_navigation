@@ -14,6 +14,7 @@
 		F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */; };
 		F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */; };
 		F5BACBF81EAEFFDA0081A84B /* SearchTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */; };
+		F5BACBFB1EAF007D0081A84B /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchTableViewController.storyboard; sourceTree = "<group>"; };
+		F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,9 @@
 			children = (
 				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
 				F5BACBED1EAEFC480081A84B /* Controller */,
-				F5BACBEE1EAEFC540081A84B /* Model */,
 				F5BACBEF1EAEFC590081A84B /* View */,
+				F5BACBEE1EAEFC540081A84B /* Model */,
+				F5BACBF91EAF00520081A84B /* Tools */,
 				F5BACBF01EAEFC820081A84B /* Resources */,
 			);
 			path = "Metro Navigation";
@@ -86,9 +89,9 @@
 		F5BACBEF1EAEFC590081A84B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
 				F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */,
 				F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */,
-				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +103,14 @@
 				F5BACBE71EAEFB450081A84B /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5BACBF91EAF00520081A84B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BACBFB1EAF007D0081A84B /* SegueHandler.swift in Sources */,
 				F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */,
 				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
 				F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */,
