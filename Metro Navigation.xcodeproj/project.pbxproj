@@ -54,14 +54,50 @@
 		F5BACBDA1EAEFB450081A84B /* Metro Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F5BACBED1EAEFC480081A84B /* Controller */,
+				F5BACBEE1EAEFC540081A84B /* Model */,
+				F5BACBF01EAEFC820081A84B /* Resources */,
+				F5BACBEF1EAEFC590081A84B /* View */,
 				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
-				F5BACBDD1EAEFB450081A84B /* ViewController.swift */,
-				F5BACBDF1EAEFB450081A84B /* Main.storyboard */,
-				F5BACBE21EAEFB450081A84B /* Assets.xcassets */,
-				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
-				F5BACBE71EAEFB450081A84B /* Info.plist */,
 			);
 			path = "Metro Navigation";
+			sourceTree = "<group>";
+		};
+		F5BACBED1EAEFC480081A84B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5BACBDD1EAEFB450081A84B /* ViewController.swift */,
+			);
+			name = Controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5BACBEE1EAEFC540081A84B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5BACBEF1EAEFC590081A84B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
+				F5BACBDF1EAEFB450081A84B /* Main.storyboard */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5BACBF01EAEFC820081A84B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5BACBE21EAEFB450081A84B /* Assets.xcassets */,
+				F5BACBE71EAEFB450081A84B /* Info.plist */,
+			);
+			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +187,7 @@
 				F5BACBE01EAEFB450081A84B /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */ = {
@@ -159,6 +196,7 @@
 				F5BACBE51EAEFB450081A84B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -264,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7K79Y659W;
-				INFOPLIST_FILE = "Metro Navigation/Info.plist";
+				INFOPLIST_FILE = "Metro Navigation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladkhambir.Metro-Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F7K79Y659W;
-				INFOPLIST_FILE = "Metro Navigation/Info.plist";
+				INFOPLIST_FILE = "Metro Navigation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vladkhambir.Metro-Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +342,7 @@
 				F5BACBEC1EAEFB450081A84B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
