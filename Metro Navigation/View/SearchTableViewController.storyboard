@@ -13,28 +13,37 @@
         <scene sceneID="0nm-7g-cUe">
             <objects>
                 <tableViewController id="17F-Zk-uXB" customClass="SearchTableViewController" customModule="Metro_Navigation" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O5j-kh-GHf">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O5j-kh-GHf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="K2b-3J-jlr">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K2b-3J-jlr" id="xqh-yC-KdG">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="17F-Zk-uXB" id="5yH-o9-Qhb"/>
                             <outlet property="delegate" destination="17F-Zk-uXB" id="KNg-31-aWK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="oV2-mY-Q0B"/>
+                    <navigationItem key="navigationItem" id="oV2-mY-Q0B">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Z0d-tI-XdU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancelSearch:" destination="17F-Zk-uXB" id="UDc-o3-4ZU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="1bJ-FR-139" id="vwH-I6-WWn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTo-Up-NY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" placeholder="Search" id="1bJ-FR-139">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="17F-Zk-uXB" id="Q1p-18-fsU"/>
+                    </connections>
+                </searchBar>
             </objects>
             <point key="canvasLocation" x="1036" y="136.28185907046478"/>
         </scene>
