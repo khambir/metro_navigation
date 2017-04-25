@@ -82,11 +82,20 @@
                     <connections>
                         <outlet property="routeInfoView" destination="bF5-mu-hyh" id="bG5-wy-Fsg"/>
                         <outlet property="routePanelView" destination="PD5-0X-UXs" id="N7k-9G-u7T"/>
+                        <segue destination="L20-UQ-85E" kind="showDetail" identifier="showSearchView" id="yfN-GZ-uZQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SuA-as-Ypd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="868" y="103.89805097451276"/>
+        </scene>
+        <!--SearchTableViewController-->
+        <scene sceneID="II6-Tz-Hlp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchTableViewController" id="L20-UQ-85E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NP7-Ho-TYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="103"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ibf-F9-bzU">

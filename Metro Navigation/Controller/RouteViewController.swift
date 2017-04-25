@@ -26,15 +26,27 @@ class RouteViewController: UIViewController {
 extension RouteViewController: RoutePanelViewDelegate {
 
     func routePanelViewToButtonDidTap(_ routePanelView: RoutePanelView) {
-        
+        performSegue(withIdentifier: RouteViewControllerSegue.showSearchView.rawValue, sender: nil)
     }
     
     func routePanelViewFromButtonDidTap(_ routePanelView: RoutePanelView) {
-        
+        performSegue(withIdentifier: RouteViewControllerSegue.showSearchView.rawValue, sender: nil)
     }
     
     func routePanelViewSwapButtonDidTap(_ routePanelView: RoutePanelView) {
         
     }
     
+}
+
+// MARK: - SegueHandler support
+extension RouteViewController: SegueHandler {
+
+    typealias ViewControllerSegue = RouteViewControllerSegue
+
+    enum RouteViewControllerSegue: String {
+        case showSearchView
+        case unnamed = ""
+    }
+
 }
