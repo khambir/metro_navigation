@@ -54,11 +54,11 @@
 		F5BACBDA1EAEFB450081A84B /* Metro Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
 				F5BACBED1EAEFC480081A84B /* Controller */,
 				F5BACBEE1EAEFC540081A84B /* Model */,
 				F5BACBF01EAEFC820081A84B /* Resources */,
 				F5BACBEF1EAEFC590081A84B /* View */,
-				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
 			);
 			path = "Metro Navigation";
 			sourceTree = "<group>";
@@ -68,7 +68,6 @@
 			children = (
 				F5BACBDD1EAEFB450081A84B /* ViewController.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -76,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
@@ -86,7 +84,6 @@
 				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
 				F5BACBDF1EAEFB450081A84B /* Main.storyboard */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -96,7 +93,6 @@
 				F5BACBE21EAEFB450081A84B /* Assets.xcassets */,
 				F5BACBE71EAEFB450081A84B /* Info.plist */,
 			);
-			name = Resources;
 			path = Resources;
 			sourceTree = "<group>";
 		};
