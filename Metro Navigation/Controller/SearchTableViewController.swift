@@ -6,17 +6,23 @@
 //  Copyright © 2017 Vladislav Khambir. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
 class SearchTableViewController: UITableViewController {
     
-    // MARK: - Outlets
+    // MARK: - Properties
+    private var geolocationManager = GeolocationManager()
+    
+    // MARK: - Outlet
     @IBOutlet var searchBar: UISearchBar!
     
     // MARK: - UIViewController functions
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = searchBar
+        geolocationManager.startLocationManager()
+        geolocationManager.geolocationManagerDelegate = self
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -37,6 +43,14 @@ extension SearchTableViewController {
 
 // MARK: - UISearchBarDelegate
 extension SearchTableViewController: UISearchBarDelegate {
+    
+}
+
+extension SearchTableViewController: GeolocationManagerDelegate {
+
+    func geolocationManager(_ geolocationManager: GeolocationManager, receivedNewLocation location: CLLocation) {
+        print(location)
+    }
     
 }
  
