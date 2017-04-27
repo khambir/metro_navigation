@@ -18,7 +18,10 @@ class GeolocationManager: CLLocationManager {
     fileprivate var updaitingLocation = false
     fileprivate var deviceLocation: CLLocation?
     fileprivate var locationManager = CLLocationManager()
-    internal weak var geolocationManagerDelegate: GeolocationManagerDelegate?
+    internal var currentLocation: CLLocationCoordinate2D? {
+        return deviceLocation?.coordinate
+    }
+    internal weak var geoManagerDelegate: GeolocationManagerDelegate?
     
     // MARK: - Methods
     internal func startLocationManager() {
@@ -54,7 +57,7 @@ extension GeolocationManager: CLLocationManagerDelegate {
 
         if deviceLocation == nil || deviceLocation!.horizontalAccuracy > newLocation.horizontalAccuracy {
             deviceLocation = newLocation
-            geolocationManagerDelegate?.geolocationManager(self, receivedNewLocation: deviceLocation!)
+            geoManagerDelegate?.geolocationManager(self, receivedNewLocation: deviceLocation!)
             // If the new location’s accuracy is equal to or better than the desired accuracy, stop asking the location manager for updates.
             if newLocation.horizontalAccuracy <= locationManager.desiredAccuracy {
                 stopLocationManager()

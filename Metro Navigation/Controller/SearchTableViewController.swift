@@ -22,7 +22,7 @@ class SearchTableViewController: UITableViewController {
         super.viewDidLoad()
         navigationItem.titleView = searchBar
         geolocationManager.startLocationManager()
-        geolocationManager.geolocationManagerDelegate = self
+        geolocationManager.geoManagerDelegate = self
     }
     
     override func viewWillDisappear(_ animated: Bool) {

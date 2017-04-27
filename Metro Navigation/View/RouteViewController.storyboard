@@ -22,14 +22,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD5-0X-UXs" customClass="RoutePanelView" customModule="Metro_Navigation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="66"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="8cM-Cw-WHo"/>
+                                    <constraint firstAttribute="height" constant="66" id="8cM-Cw-WHo"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF5-mu-hyh">
-                                <rect key="frame" x="0.0" y="108" width="375" height="88"/>
+                                <rect key="frame" x="0.0" y="130" width="375" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-Tw-Seh">
                                         <rect key="frame" x="8" y="8" width="359" height="50"/>
@@ -60,7 +60,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Hq-CkM">
-                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
+                                <rect key="frame" x="0.0" y="218" width="375" height="449"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -102,7 +102,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VDT-HG-Ur2" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="8cx-k7-QB1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="8cx-k7-QB1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.22991505265235901" green="0.50088357925415039" blue="0.96033650636672974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
