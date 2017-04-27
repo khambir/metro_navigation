@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-Qz-ZyB">
-                    <rect key="frame" x="0.0" y="0.0" width="337" height="44"/>
+                    <rect key="frame" x="8" y="0.0" width="321" height="43"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJA-Ai-ePn">
-                            <rect key="frame" x="0.0" y="0.0" width="146.5" height="44"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WJA-Ai-ePn">
+                            <rect key="frame" x="0.0" y="0.0" width="138.5" height="43"/>
                             <color key="backgroundColor" red="0.95332289800437942" green="0.96276173857868019" blue="0.96276173857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="From">
                                 <color key="titleColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -33,8 +33,8 @@
                                 <action selector="fromButtonAction:" destination="-1" eventType="touchUpInside" id="7Uv-3H-UlJ"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJN-0D-PaQ">
-                            <rect key="frame" x="146.5" y="0.0" width="44" height="44"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJN-0D-PaQ">
+                            <rect key="frame" x="138.5" y="0.0" width="44" height="43"/>
                             <color key="backgroundColor" red="0.95332289800437942" green="0.96276173857868019" blue="0.96276173857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="a1M-w9-Z7r"/>
@@ -45,8 +45,8 @@
                                 <action selector="swap:" destination="-1" eventType="touchUpInside" id="JNF-o1-WB2"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zr-eQ-Bwa">
-                            <rect key="frame" x="190.5" y="0.0" width="146.5" height="44"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="9zr-eQ-Bwa">
+                            <rect key="frame" x="182.5" y="0.0" width="138.5" height="43"/>
                             <color key="backgroundColor" red="0.95332289800437942" green="0.96276173857868019" blue="0.96276173857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="To">
                                 <color key="titleColor" red="0.22991505270000001" green="0.50088357930000005" blue="0.96033650640000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,17 +60,27 @@
                         <constraint firstItem="WJA-Ai-ePn" firstAttribute="width" secondItem="9zr-eQ-Bwa" secondAttribute="width" id="z9h-4W-4AR"/>
                     </constraints>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlN-3x-3yv">
+                    <rect key="frame" x="0.0" y="43" width="337" height="2"/>
+                    <color key="backgroundColor" red="0.21329966189999999" green="0.45000636579999997" blue="0.86626082660000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="xeO-1m-Yc6"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="0.61171489950000002" green="0.61572641130000005" blue="0.61169314379999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.95290178060531616" green="0.96475702524185181" blue="0.96458953619003296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="aJr-Qz-ZyB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="68F-OO-wX8"/>
-                <constraint firstAttribute="trailing" secondItem="aJr-Qz-ZyB" secondAttribute="trailing" id="86p-We-yvR"/>
-                <constraint firstAttribute="bottom" secondItem="aJr-Qz-ZyB" secondAttribute="bottom" constant="1" id="dHQ-iD-HSq"/>
-                <constraint firstItem="aJr-Qz-ZyB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gub-OC-vl6"/>
+                <constraint firstAttribute="trailing" secondItem="aJr-Qz-ZyB" secondAttribute="trailing" constant="8" id="86p-We-yvR"/>
+                <constraint firstAttribute="trailing" secondItem="qlN-3x-3yv" secondAttribute="trailing" id="W6Z-gM-L0k"/>
+                <constraint firstItem="qlN-3x-3yv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e5B-Pk-YgT"/>
+                <constraint firstItem="aJr-Qz-ZyB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="gub-OC-vl6"/>
+                <constraint firstAttribute="bottom" secondItem="qlN-3x-3yv" secondAttribute="bottom" id="kSj-al-UlQ"/>
+                <constraint firstItem="qlN-3x-3yv" firstAttribute="top" secondItem="aJr-Qz-ZyB" secondAttribute="bottom" id="uIM-IH-u2B"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="14.5" y="-251"/>
+            <point key="canvasLocation" x="14.5" y="-251.5"/>
         </view>
     </objects>
     <resources>
