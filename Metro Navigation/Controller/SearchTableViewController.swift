@@ -9,12 +9,17 @@
 import CoreLocation
 import UIKit
 
+protocol SearchTableViewControllerDelegate: class {
+    func searchTableViewController(_ searchTableViewController: SearchTableViewController, didSelectMetroStation metroStation: MetroStation)
+}
+
 class SearchTableViewController: UITableViewController {
     
     // MARK: - Properties
     private var geolocationManager = GeolocationManager()
     fileprivate var metroStations = MetroStation.loadAll()
     fileprivate var filteredMetroStations: [MetroStation] = []
+    internal weak var delegate: SearchTableViewControllerDelegate?
     
     // MARK: - Outlet
     @IBOutlet var searchBar: UISearchBar!
@@ -87,6 +92,9 @@ extension SearchTableViewController {
 extension SearchTableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMetroStantion = filteredMetroStations.isEmpty ? metroStations[indexPath.row] : filteredMetroStations[indexPath.row]
+        delegate?.searchTableViewController(self, didSelectMetroStation: selectedMetroStantion)
+        dismiss(animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }
     

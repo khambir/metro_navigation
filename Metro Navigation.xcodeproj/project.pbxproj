@@ -14,6 +14,7 @@
 		F57F9CC81EB22ABF00133191 /* kyivMetroStations.plist in Resources */ = {isa = PBXBuildFile; fileRef = F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */; };
 		F57F9CCA1EB22AEA00133191 /* MetroStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F9CC91EB22AEA00133191 /* MetroStation.swift */; };
 		F57F9CCC1EB2389400133191 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F9CCB1EB2389400133191 /* UILabelExtension.swift */; };
+		F57F9CCE1EB245F800133191 /* RoutePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F9CCD1EB245F800133191 /* RoutePoint.swift */; };
 		F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */; };
 		F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBE21EAEFB450081A84B /* Assets.xcassets */; };
 		F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */; };
@@ -32,6 +33,7 @@
 		F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyivMetroStations.plist; path = "Metro Navigation/kyivMetroStations.plist"; sourceTree = SOURCE_ROOT; };
 		F57F9CC91EB22AEA00133191 /* MetroStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetroStation.swift; path = "Metro Navigation/MetroStation.swift"; sourceTree = SOURCE_ROOT; };
 		F57F9CCB1EB2389400133191 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		F57F9CCD1EB245F800133191 /* RoutePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoutePoint.swift; path = "Metro Navigation/Tools/RoutePoint.swift"; sourceTree = SOURCE_ROOT; };
 		F5BACBD81EAEFB450081A84B /* Metro Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metro Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5BACBE21EAEFB450081A84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */,
 				F57F9CC91EB22AEA00133191 /* MetroStation.swift */,
+				F57F9CCD1EB245F800133191 /* RoutePoint.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */,
 				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
 				F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */,
+				F57F9CCE1EB245F800133191 /* RoutePoint.swift in Sources */,
 				F57F9CCA1EB22AEA00133191 /* MetroStation.swift in Sources */,
 				F57F9CCC1EB2389400133191 /* UILabelExtension.swift in Sources */,
 				F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */,
@@ -355,9 +359,10 @@
 				DEVELOPMENT_TEAM = F7K79Y659W;
 				INFOPLIST_FILE = "Metro Navigation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vladkhambir.Metro-Navigation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladkhambir.Metro-Navigationf";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -368,9 +373,10 @@
 				DEVELOPMENT_TEAM = F7K79Y659W;
 				INFOPLIST_FILE = "Metro Navigation/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.vladkhambir.Metro-Navigation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vladkhambir.Metro-Navigationf";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
