@@ -59,7 +59,11 @@ extension RouteViewController: RoutePanelViewDelegate {
     }
     
     func routePanelViewSwapButtonDidTap(_ routePanelView: RoutePanelView) {
-        
+        if fromMetroStation != nil && toMetroStation != nil {
+            let tmp = fromMetroStation
+            fromMetroStation = toMetroStation
+            toMetroStation = tmp
+        }
     }
     
 }
