@@ -26,12 +26,14 @@ class SearchTableViewController: UITableViewController {
     
     // MARK: - Methods
     private func initCell() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let nib = UINib(nibName: String(describing: SearchStantionTableViewCell.self), bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: SearchStantionTableViewCell.identifier)
     }
     
     // MARK: - UIViewController functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        initCell()
         navigationItem.titleView = searchBar
         geolocationManager.geoManagerDelegate = self
     }
@@ -77,12 +79,13 @@ extension SearchTableViewController: GeolocationManagerDelegate {
 extension SearchTableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchStantionTableViewCell.identifier) as? SearchStantionTableViewCell else { return UITableViewCell() }
         let dataSource = filteredMetroStations.isEmpty ? metroStations : filteredMetroStations
-        cell.textLabel?.setText(dataSource[indexPath.row].name, withBoldPart: searchBar.text ?? "")
+        cell.stationNameLabel.setText(dataSource[indexPath.row].name, withBoldPart: searchBar.text ?? "")
+        cell.branchIndicatorView.backgroundColor = dataSource[indexPath.row].color
         if let deviceLocation = geolocationManager.location {
             let distanceToStation = round(dataSource[indexPath.row].location.distance(from: deviceLocation) / 1000 * 10) / 10
-            cell.detailTextLabel?.text = "\(distanceToStation) km"
+            cell.distanceLabel.text = "\(distanceToStation) km"
         }
         return cell
     }
