@@ -36,6 +36,7 @@ class SearchTableViewController: UITableViewController {
         initCell()
         navigationItem.titleView = searchBar
         geolocationManager.geoManagerDelegate = self
+        tableView.hideBottomEmptyCells()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
