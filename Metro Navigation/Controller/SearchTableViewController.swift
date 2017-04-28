@@ -16,7 +16,7 @@ protocol SearchTableViewControllerDelegate: class {
 class SearchTableViewController: UITableViewController {
     
     // MARK: - Properties
-    private var geolocationManager = GeolocationManager()
+    fileprivate var geolocationManager = GeolocationManager()
     fileprivate var metroStations = MetroStation.loadAll()
     fileprivate var filteredMetroStations: [MetroStation] = []
     internal weak var delegate: SearchTableViewControllerDelegate?
@@ -66,7 +66,9 @@ extension SearchTableViewController: UISearchBarDelegate {
 extension SearchTableViewController: GeolocationManagerDelegate {
 
     func geolocationManager(_ geolocationManager: GeolocationManager, receivedNewLocation location: CLLocation) {
-        print(location)
+        metroStations.sort { $0.location.distance(from: location) < $1.location.distance(from: location) }
+        filteredMetroStations.sort { $0.location.distance(from: location) < $1.location.distance(from: location) }
+        tableView.reloadData()
     }
     
 }
@@ -78,6 +80,10 @@ extension SearchTableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
         let dataSource = filteredMetroStations.isEmpty ? metroStations : filteredMetroStations
         cell.textLabel?.setText(dataSource[indexPath.row].name, withBoldPart: searchBar.text ?? "")
+        if let deviceLocation = geolocationManager.location {
+            let distanceToStation = round(dataSource[indexPath.row].location.distance(from: deviceLocation) / 1000 * 10) / 10
+            cell.detailTextLabel?.text = "\(distanceToStation) km"
+        }
         return cell
     }
     
