@@ -23,8 +23,14 @@ class GeolocationManager: CLLocationManager {
     }
     internal weak var geoManagerDelegate: GeolocationManagerDelegate?
     
+    // MARK: - Init
+    override init() {
+        super.init()
+        startLocationManager()
+    }
+    
     // MARK: - Methods
-    internal func startLocationManager() {
+    private func startLocationManager() {
         locationManager.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self

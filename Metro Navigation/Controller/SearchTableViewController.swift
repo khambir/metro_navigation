@@ -33,7 +33,6 @@ class SearchTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.titleView = searchBar
-        geolocationManager.startLocationManager()
         geolocationManager.geoManagerDelegate = self
     }
     
