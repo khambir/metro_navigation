@@ -15,7 +15,7 @@ struct MetroStation {
     internal let id: Int
     internal let name: String
     internal let color: UIColor
-    internal let location: CLLocationCoordinate2D
+    internal let location: CLLocation
     
     // MARK: - Methods
     internal static func loadAll() -> [MetroStation] {
@@ -35,7 +35,7 @@ struct MetroStation {
                 let longitude = location["longitude"] as? Double else {
                     continue
             }
-            let newStation = MetroStation(id: id, name: name, color: color, location: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
+            let newStation = MetroStation(id: id, name: name, color: color, location: CLLocation(latitude: latitude, longitude: longitude))
             result.append(newStation)
         }
         
