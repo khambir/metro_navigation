@@ -10,9 +10,16 @@
 		A80A47011EB35C18002A1324 /* SearchStantionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A80A47001EB35C18002A1324 /* SearchStantionTableViewCell.xib */; };
 		A80A47031EB35C22002A1324 /* SearchStantionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */; };
 		A80A47061EB364DB002A1324 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A47051EB364DB002A1324 /* UITableViewExtension.swift */; };
+		F51169721EB7A0AA004DF356 /* MetroNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169711EB7A0AA004DF356 /* MetroNavigation.swift */; };
 		F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F46451EAFB9760040903E /* RoutePanelView.swift */; };
 		F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51F46481EAFBBC90040903E /* RoutePanelView.xib */; };
 		F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F464A1EB11F180040903E /* GeolocationManager.swift */; };
+		F53FCE071EB77F4B00F9BF38 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE061EB77F4B00F9BF38 /* Vertex.swift */; };
+		F53FCE091EB77F6200F9BF38 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE081EB77F6200F9BF38 /* Edge.swift */; };
+		F53FCE0B1EB7803C00F9BF38 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE0A1EB7803C00F9BF38 /* Path.swift */; };
+		F53FCE0D1EB7805500F9BF38 /* DijkstraAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE0C1EB7805500F9BF38 /* DijkstraAlgorithm.swift */; };
+		F53FCE0F1EB780FF00F9BF38 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE0E1EB780FF00F9BF38 /* Route.swift */; };
+		F53FCE111EB78AFA00F9BF38 /* kyivMetroRoutes.plist in Resources */ = {isa = PBXBuildFile; fileRef = F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */; };
 		F57F9CC41EB1ABB300133191 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */; };
 		F57F9CC81EB22ABF00133191 /* kyivMetroStations.plist in Resources */ = {isa = PBXBuildFile; fileRef = F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */; };
 		F57F9CCA1EB22AEA00133191 /* MetroStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F9CC91EB22AEA00133191 /* MetroStation.swift */; };
@@ -32,9 +39,16 @@
 		A80A47001EB35C18002A1324 /* SearchStantionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchStantionTableViewCell.xib; sourceTree = "<group>"; };
 		A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStantionTableViewCell.swift; sourceTree = "<group>"; };
 		A80A47051EB364DB002A1324 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		F51169711EB7A0AA004DF356 /* MetroNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroNavigation.swift; sourceTree = "<group>"; };
 		F51F46451EAFB9760040903E /* RoutePanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePanelView.swift; sourceTree = "<group>"; };
 		F51F46481EAFBBC90040903E /* RoutePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePanelView.xib; sourceTree = "<group>"; };
 		F51F464A1EB11F180040903E /* GeolocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
+		F53FCE061EB77F4B00F9BF38 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		F53FCE081EB77F6200F9BF38 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		F53FCE0A1EB7803C00F9BF38 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		F53FCE0C1EB7805500F9BF38 /* DijkstraAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DijkstraAlgorithm.swift; sourceTree = "<group>"; };
+		F53FCE0E1EB780FF00F9BF38 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Route.swift; path = "Metro Navigation/Tools/Route.swift"; sourceTree = SOURCE_ROOT; };
+		F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyivMetroRoutes.plist; path = "Metro Navigation/Tools/kyivMetroRoutes.plist"; sourceTree = SOURCE_ROOT; };
 		F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyivMetroStations.plist; path = "Metro Navigation/kyivMetroStations.plist"; sourceTree = SOURCE_ROOT; };
 		F57F9CC91EB22AEA00133191 /* MetroStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetroStation.swift; path = "Metro Navigation/MetroStation.swift"; sourceTree = SOURCE_ROOT; };
@@ -81,6 +95,17 @@
 			name = RoutePanel;
 			sourceTree = "<group>";
 		};
+		F53FCE051EB77EFA00F9BF38 /* DijkstraAlgorithm */ = {
+			isa = PBXGroup;
+			children = (
+				F53FCE061EB77F4B00F9BF38 /* Vertex.swift */,
+				F53FCE081EB77F6200F9BF38 /* Edge.swift */,
+				F53FCE0A1EB7803C00F9BF38 /* Path.swift */,
+				F53FCE0C1EB7805500F9BF38 /* DijkstraAlgorithm.swift */,
+			);
+			name = DijkstraAlgorithm;
+			sourceTree = "<group>";
+		};
 		F57F9CC21EB1AB9400133191 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +137,7 @@
 			children = (
 				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
 				F51F464A1EB11F180040903E /* GeolocationManager.swift */,
+				F51169711EB7A0AA004DF356 /* MetroNavigation.swift */,
 				F5BACBED1EAEFC480081A84B /* Controller */,
 				F5BACBEF1EAEFC590081A84B /* View */,
 				F5BACBEE1EAEFC540081A84B /* Model */,
@@ -134,7 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */,
+				F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */,
 				F57F9CC91EB22AEA00133191 /* MetroStation.swift */,
+				F53FCE0E1EB780FF00F9BF38 /* Route.swift */,
 				F57F9CCD1EB245F800133191 /* RoutePoint.swift */,
 			);
 			path = Model;
@@ -165,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */,
+				F53FCE051EB77EFA00F9BF38 /* DijkstraAlgorithm */,
 				F57F9CC21EB1AB9400133191 /* Extensions */,
 			);
 			path = Tools;
@@ -233,6 +262,7 @@
 				F5BACBF81EAEFFDA0081A84B /* SearchTableViewController.storyboard in Resources */,
 				F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */,
 				F57F9CC81EB22ABF00133191 /* kyivMetroStations.plist in Resources */,
+				F53FCE111EB78AFA00F9BF38 /* kyivMetroRoutes.plist in Resources */,
 				F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */,
 				F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */,
 				A80A47011EB35C18002A1324 /* SearchStantionTableViewCell.xib in Resources */,
@@ -249,15 +279,21 @@
 			files = (
 				F5BACBFB1EAF007D0081A84B /* SegueHandler.swift in Sources */,
 				F57F9CC41EB1ABB300133191 /* UIColorExtension.swift in Sources */,
+				F53FCE091EB77F6200F9BF38 /* Edge.swift in Sources */,
 				A80A47031EB35C22002A1324 /* SearchStantionTableViewCell.swift in Sources */,
 				A80A47061EB364DB002A1324 /* UITableViewExtension.swift in Sources */,
+				F53FCE0D1EB7805500F9BF38 /* DijkstraAlgorithm.swift in Sources */,
 				F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */,
 				F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */,
 				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
+				F51169721EB7A0AA004DF356 /* MetroNavigation.swift in Sources */,
+				F53FCE0F1EB780FF00F9BF38 /* Route.swift in Sources */,
+				F53FCE071EB77F4B00F9BF38 /* Vertex.swift in Sources */,
 				F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */,
 				F57F9CCE1EB245F800133191 /* RoutePoint.swift in Sources */,
 				F57F9CCA1EB22AEA00133191 /* MetroStation.swift in Sources */,
 				F57F9CCC1EB2389400133191 /* UILabelExtension.swift in Sources */,
+				F53FCE0B1EB7803C00F9BF38 /* Path.swift in Sources */,
 				F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

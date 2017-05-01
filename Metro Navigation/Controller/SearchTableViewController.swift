@@ -17,7 +17,7 @@ class SearchTableViewController: UITableViewController {
     
     // MARK: - Properties
     fileprivate var geolocationManager = GeolocationManager()
-    fileprivate var metroStations = MetroStation.loadAll()
+    fileprivate var metroStations = MetroNavigation.shared.metroStations
     fileprivate var filteredMetroStations: [MetroStation] = []
     internal weak var delegate: SearchTableViewControllerDelegate?
     
@@ -108,4 +108,3 @@ extension SearchTableViewController {
     }
     
 }
- 

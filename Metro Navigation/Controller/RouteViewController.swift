@@ -13,25 +13,52 @@ class RouteViewController: UIViewController {
     
     // MARK: - Properties
     fileprivate var toMetroStation: MetroStation? {
-        willSet {
-            routePanelView.toButton.setTitle(newValue?.name, for: .normal)
+        didSet {
+            routePanelView.toButton.setTitle(toMetroStation?.name, for: .normal)
+            buildRoute()
         }
     }
     fileprivate var fromMetroStation: MetroStation? {
-        willSet {
-            routePanelView.fromButton.setTitle(newValue?.name, for: .normal)
+        didSet {
+            routePanelView.fromButton.setTitle(fromMetroStation?.name, for: .normal)
+            buildRoute()
         }
     }
     fileprivate var routePoint = RoutePoint.from
     fileprivate var geolocationManager = GeolocationManager()
-    fileprivate var metroStations = MetroStation.loadAll()
+    fileprivate var metroStations = MetroNavigation.shared.metroStations
+    fileprivate var paths: [Path] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     // MARK: - Outlets
     @IBOutlet weak var routePanelView: RoutePanelView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    // MARK: - Methods
+    private func initCell() {
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    private func buildRoute() {
+        guard   let fromMetroStation = fromMetroStation,
+                let toMetroStation = toMetroStation,
+                toMetroStation.id != fromMetroStation.id,
+                let shortestPath = DijkstraAlgorithm.getShortestPath(from: fromMetroStation, to: toMetroStation)
+            else {
+                paths = []
+                return
+        }
+        paths = shortestPath.getHistory(from: fromMetroStation)
+    }
     
     // MARK: - UIViewController functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        Route.loadAll()
+        initCell()
         geolocationManager.geoManagerDelegate = self
         routePanelView.delegate = self
     }
@@ -44,6 +71,28 @@ class RouteViewController: UIViewController {
             controller.delegate = self
         case .unnamed: break
         }
+    }
+    
+}
+
+// MARK: - UITableViewDelegate functions
+extension RouteViewController: UITableViewDelegate {
+    
+}
+
+// MARK: - UITableViewDataSource functions
+extension RouteViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
+        guard let stationID = paths[indexPath.row].destination?.id, let metroStation = (metroStations.filter { $0.id == stationID }).first else { return UITableViewCell() }
+        cell.textLabel?.text = metroStation.name
+        cell.detailTextLabel?.text = "\(paths[indexPath.row].total)"
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return paths.count
     }
     
 }
