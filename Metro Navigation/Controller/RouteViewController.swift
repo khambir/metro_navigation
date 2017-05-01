@@ -24,7 +24,6 @@ class RouteViewController: UIViewController {
     fileprivate var routePoint = RoutePoint.from
     
     // MARK: - Outlets
-    @IBOutlet weak var routeInfoView: UIView!
     @IBOutlet weak var routePanelView: RoutePanelView!
     
     // MARK: - UIViewController functions

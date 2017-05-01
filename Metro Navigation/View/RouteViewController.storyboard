@@ -22,41 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD5-0X-UXs" customClass="RoutePanelView" customModule="Metro_Navigation" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="66"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="154"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="66" id="8cM-Cw-WHo"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF5-mu-hyh">
-                                <rect key="frame" x="0.0" y="130" width="375" height="88"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR5-Tw-Seh">
-                                        <rect key="frame" x="8" y="8" width="359" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="44"/>
-                                        <color key="textColor" red="0.97598085869999995" green="0.98564403550000002" blue="0.98564403550000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arrive at 4:09 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSy-zp-YIh">
-                                        <rect key="frame" x="8" y="58" width="359" height="22"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="22" id="YaK-Qd-ldQ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.21329966187477112" green="0.45000636577606201" blue="0.866260826587677" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="WSy-zp-YIh" firstAttribute="top" secondItem="DR5-Tw-Seh" secondAttribute="bottom" id="15y-JW-6tR"/>
-                                    <constraint firstAttribute="height" constant="88" id="8Ck-sE-nCY"/>
-                                    <constraint firstAttribute="bottom" secondItem="WSy-zp-YIh" secondAttribute="bottom" constant="8" id="TsM-YH-hfr"/>
-                                    <constraint firstItem="WSy-zp-YIh" firstAttribute="leading" secondItem="bF5-mu-hyh" secondAttribute="leading" constant="8" id="az2-yB-Oac"/>
-                                    <constraint firstAttribute="trailing" secondItem="WSy-zp-YIh" secondAttribute="trailing" constant="8" id="gvB-F1-IPb"/>
-                                    <constraint firstAttribute="trailing" secondItem="DR5-Tw-Seh" secondAttribute="trailing" constant="8" id="lpd-TK-nJW"/>
-                                    <constraint firstItem="DR5-Tw-Seh" firstAttribute="leading" secondItem="bF5-mu-hyh" secondAttribute="leading" constant="8" id="qYQ-GL-sFS"/>
-                                    <constraint firstItem="DR5-Tw-Seh" firstAttribute="top" secondItem="bF5-mu-hyh" secondAttribute="top" constant="8" id="r6f-cj-cfI"/>
+                                    <constraint firstAttribute="height" constant="154" id="8cM-Cw-WHo"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Hq-CkM">
@@ -67,27 +36,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="agd-Hq-CkM" secondAttribute="trailing" id="0EL-DQ-ayY"/>
-                            <constraint firstItem="bF5-mu-hyh" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="4Ap-F6-KdE"/>
-                            <constraint firstAttribute="trailing" secondItem="bF5-mu-hyh" secondAttribute="trailing" id="4bj-7S-WZP"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="top" secondItem="JFY-l8-qGI" secondAttribute="bottom" id="4yw-R9-gJB"/>
                             <constraint firstItem="agd-Hq-CkM" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="MaK-aM-yaM"/>
-                            <constraint firstItem="bF5-mu-hyh" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" id="bwN-QI-nEC"/>
                             <constraint firstItem="yxH-ti-Vte" firstAttribute="top" secondItem="agd-Hq-CkM" secondAttribute="bottom" id="fyA-CW-o6y"/>
-                            <constraint firstItem="agd-Hq-CkM" firstAttribute="top" secondItem="bF5-mu-hyh" secondAttribute="bottom" id="l1m-aL-9g4"/>
                             <constraint firstAttribute="trailing" secondItem="PD5-0X-UXs" secondAttribute="trailing" id="xij-n6-hJl"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="yKj-j3-LyL"/>
+                            <constraint firstItem="agd-Hq-CkM" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" id="zdt-8d-h2N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Metro Navigation" id="ku8-aK-DwF"/>
                     <connections>
-                        <outlet property="routeInfoView" destination="bF5-mu-hyh" id="bG5-wy-Fsg"/>
                         <outlet property="routePanelView" destination="PD5-0X-UXs" id="N7k-9G-u7T"/>
                         <segue destination="L20-UQ-85E" kind="showDetail" identifier="showSearchView" id="yfN-GZ-uZQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SuA-as-Ypd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="103.89805097451276"/>
+            <point key="canvasLocation" x="867.5" y="103.5"/>
         </scene>
         <!--SearchTableViewController-->
         <scene sceneID="II6-Tz-Hlp">
