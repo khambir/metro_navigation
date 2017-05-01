@@ -6,6 +6,7 @@
 //  Copyright © 2017 Vladislav Khambir. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
 class RouteViewController: UIViewController {
@@ -22,6 +23,8 @@ class RouteViewController: UIViewController {
         }
     }
     fileprivate var routePoint = RoutePoint.from
+    fileprivate var geolocationManager = GeolocationManager()
+    fileprivate var metroStations = MetroStation.loadAll()
     
     // MARK: - Outlets
     @IBOutlet weak var routePanelView: RoutePanelView!
@@ -29,6 +32,7 @@ class RouteViewController: UIViewController {
     // MARK: - UIViewController functions
     override func viewDidLoad() {
         super.viewDidLoad()
+        geolocationManager.geoManagerDelegate = self
         routePanelView.delegate = self
     }
     
@@ -86,6 +90,17 @@ extension RouteViewController: SearchTableViewControllerDelegate {
         switch routePoint {
         case .from: fromMetroStation = metroStation
         case .to: toMetroStation = metroStation
+        }
+    }
+    
+}
+
+// MARK: - GeolocationManagerDelegate functions
+extension RouteViewController: GeolocationManagerDelegate {
+    
+    func geolocationManager(_ geolocationManager: GeolocationManager, receivedNewLocation location: CLLocation) {
+        if fromMetroStation == nil {
+            fromMetroStation = metroStations.sorted { $0.location.distance(from: location) < $1.location.distance(from: location) }.first
         }
     }
     
