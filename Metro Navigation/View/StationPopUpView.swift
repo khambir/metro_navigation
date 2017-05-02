@@ -39,6 +39,7 @@ class StationPopUpView: UIView {
         view.frame = bounds
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         view.addShadow()
+        view.addParallaxEffect()
         addSubview(view)
     }
     
