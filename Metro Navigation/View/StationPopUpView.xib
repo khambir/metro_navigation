@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StationPopUpView" customModule="Metro_Navigation" customModuleProvider="target">
+            <connections>
+                <outlet property="branchIndicatorView" destination="SdZ-9B-w3R" id="Nef-F0-kur"/>
+                <outlet property="stationNameLabel" destination="XxB-yG-5iE" id="za7-ss-jfL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mk6-kp-o3S">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="66"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XxB-yG-5iE">
+                            <rect key="frame" x="38" y="8" width="174" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdZ-9B-w3R">
+                            <rect key="frame" x="8" y="22" width="22" height="22"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="VZn-eM-p9K"/>
+                                <constraint firstAttribute="width" constant="22" id="ZvU-If-Yhe"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="SdZ-9B-w3R" firstAttribute="centerY" secondItem="Mk6-kp-o3S" secondAttribute="centerY" id="HBj-ra-M3k"/>
+                        <constraint firstAttribute="trailing" secondItem="XxB-yG-5iE" secondAttribute="trailing" constant="8" id="XNz-SV-7HI"/>
+                        <constraint firstAttribute="bottom" secondItem="XxB-yG-5iE" secondAttribute="bottom" constant="8" id="Z8a-t1-VFG"/>
+                        <constraint firstAttribute="height" constant="66" id="fG7-fl-vpw"/>
+                        <constraint firstItem="SdZ-9B-w3R" firstAttribute="leading" secondItem="Mk6-kp-o3S" secondAttribute="leading" constant="8" id="fka-sl-s22"/>
+                        <constraint firstItem="XxB-yG-5iE" firstAttribute="leading" secondItem="SdZ-9B-w3R" secondAttribute="trailing" constant="8" id="kpu-ht-I9H"/>
+                        <constraint firstItem="XxB-yG-5iE" firstAttribute="top" secondItem="Mk6-kp-o3S" secondAttribute="top" constant="8" id="uMm-iR-5ZQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Knn-ZE-qgM">
+                    <rect key="frame" x="0.0" y="74" width="106" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71B-Ug-Qxe">
+                            <rect key="frame" x="0.0" y="0.0" width="106" height="54"/>
+                            <state key="normal" title="From"/>
+                            <connections>
+                                <action selector="fromButtonAction:" destination="-1" eventType="touchUpInside" id="0Yp-2u-6oP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="71B-Ug-Qxe" firstAttribute="leading" secondItem="Knn-ZE-qgM" secondAttribute="leading" id="HtG-iM-Od2"/>
+                        <constraint firstItem="71B-Ug-Qxe" firstAttribute="top" secondItem="Knn-ZE-qgM" secondAttribute="top" id="IgO-21-I7B"/>
+                        <constraint firstAttribute="trailing" secondItem="71B-Ug-Qxe" secondAttribute="trailing" id="WEP-e0-3sC"/>
+                        <constraint firstAttribute="bottom" secondItem="71B-Ug-Qxe" secondAttribute="bottom" id="WQ7-Ap-An2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgU-AH-Hm1">
+                    <rect key="frame" x="114" y="74" width="106" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aI-ZC-kSy">
+                            <rect key="frame" x="0.0" y="0.0" width="106" height="54"/>
+                            <state key="normal" title="To"/>
+                            <connections>
+                                <action selector="toButtonAction:" destination="-1" eventType="touchUpInside" id="tOk-Ds-7Ke"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2aI-ZC-kSy" secondAttribute="trailing" id="94Y-RU-zYy"/>
+                        <constraint firstItem="2aI-ZC-kSy" firstAttribute="leading" secondItem="sgU-AH-Hm1" secondAttribute="leading" id="bSq-LU-RGu"/>
+                        <constraint firstItem="2aI-ZC-kSy" firstAttribute="top" secondItem="sgU-AH-Hm1" secondAttribute="top" id="cve-cm-iev"/>
+                        <constraint firstAttribute="bottom" secondItem="2aI-ZC-kSy" secondAttribute="bottom" id="joY-0a-QmI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sgU-AH-Hm1" secondAttribute="bottom" id="3Hd-WS-KFn"/>
+                <constraint firstItem="Knn-ZE-qgM" firstAttribute="width" secondItem="sgU-AH-Hm1" secondAttribute="width" id="6U3-dM-qFU"/>
+                <constraint firstAttribute="bottom" secondItem="Knn-ZE-qgM" secondAttribute="bottom" id="7Im-9d-Nd9"/>
+                <constraint firstItem="Mk6-kp-o3S" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8IV-0v-eUU"/>
+                <constraint firstAttribute="trailing" secondItem="sgU-AH-Hm1" secondAttribute="trailing" id="AIV-Qa-Hd0"/>
+                <constraint firstItem="sgU-AH-Hm1" firstAttribute="leading" secondItem="Knn-ZE-qgM" secondAttribute="trailing" constant="8" id="Lpe-hK-ZKX"/>
+                <constraint firstItem="Knn-ZE-qgM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PAS-0B-b0q"/>
+                <constraint firstAttribute="trailing" secondItem="Mk6-kp-o3S" secondAttribute="trailing" id="PgV-Fx-NDM"/>
+                <constraint firstItem="sgU-AH-Hm1" firstAttribute="top" secondItem="Mk6-kp-o3S" secondAttribute="bottom" constant="8" id="SCI-CO-6To"/>
+                <constraint firstItem="Mk6-kp-o3S" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="abH-Ov-30s"/>
+                <constraint firstItem="Knn-ZE-qgM" firstAttribute="top" secondItem="Mk6-kp-o3S" secondAttribute="bottom" constant="8" id="zhW-II-UHE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-69" y="-228"/>
+        </view>
+    </objects>
+</document>

@@ -15,6 +15,9 @@
 		F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */; };
 		F51169781EB85B43004DF356 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169771EB85B43004DF356 /* DateExtension.swift */; };
 		F511697A1EB86361004DF356 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169791EB86361004DF356 /* TimeIntervalExtension.swift */; };
+		F511697D1EB86ADF004DF356 /* StationPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511697C1EB86ADF004DF356 /* StationPopUpView.xib */; };
+		F511697F1EB86CB6004DF356 /* StationPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511697E1EB86CB6004DF356 /* StationPopUpView.swift */; };
+		F51169811EB87315004DF356 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169801EB87315004DF356 /* UIViewExtension.swift */; };
 		F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F46451EAFB9760040903E /* RoutePanelView.swift */; };
 		F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51F46481EAFBBC90040903E /* RoutePanelView.xib */; };
 		F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F464A1EB11F180040903E /* GeolocationManager.swift */; };
@@ -48,6 +51,9 @@
 		F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteStationTableViewCell.xib; sourceTree = "<group>"; };
 		F51169771EB85B43004DF356 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F51169791EB86361004DF356 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		F511697C1EB86ADF004DF356 /* StationPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationPopUpView.xib; sourceTree = "<group>"; };
+		F511697E1EB86CB6004DF356 /* StationPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationPopUpView.swift; sourceTree = "<group>"; };
+		F51169801EB87315004DF356 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F51F46451EAFB9760040903E /* RoutePanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePanelView.swift; sourceTree = "<group>"; };
 		F51F46481EAFBBC90040903E /* RoutePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePanelView.xib; sourceTree = "<group>"; };
 		F51F464A1EB11F180040903E /* GeolocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
@@ -96,6 +102,15 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		F511697B1EB86AC3004DF356 /* StationPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				F511697C1EB86ADF004DF356 /* StationPopUpView.xib */,
+				F511697E1EB86CB6004DF356 /* StationPopUpView.swift */,
+			);
+			name = StationPopUp;
+			sourceTree = "<group>";
+		};
 		F51F46471EAFBB8D0040903E /* RoutePanel */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,7 @@
 				F51169771EB85B43004DF356 /* DateExtension.swift */,
 				F57F9CCB1EB2389400133191 /* UILabelExtension.swift */,
 				A80A47051EB364DB002A1324 /* UITableViewExtension.swift */,
+				F51169801EB87315004DF356 /* UIViewExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				F51F46471EAFBB8D0040903E /* RoutePanel */,
+				F511697B1EB86AC3004DF356 /* StationPopUp */,
 				A80A47041EB35C2B002A1324 /* Cells */,
 				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
 				F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */,
@@ -277,6 +294,7 @@
 				F53FCE111EB78AFA00F9BF38 /* kyivMetroRoutes.plist in Resources */,
 				F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */,
 				F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */,
+				F511697D1EB86ADF004DF356 /* StationPopUpView.xib in Resources */,
 				A80A47011EB35C18002A1324 /* SearchStantionTableViewCell.xib in Resources */,
 				F5BACBF21EAEFE780081A84B /* RouteViewController.storyboard in Resources */,
 				F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */,
@@ -306,8 +324,10 @@
 				F53FCE0F1EB780FF00F9BF38 /* Route.swift in Sources */,
 				F53FCE071EB77F4B00F9BF38 /* Vertex.swift in Sources */,
 				F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */,
+				F511697F1EB86CB6004DF356 /* StationPopUpView.swift in Sources */,
 				F57F9CCE1EB245F800133191 /* RoutePoint.swift in Sources */,
 				F57F9CCA1EB22AEA00133191 /* MetroStation.swift in Sources */,
+				F51169811EB87315004DF356 /* UIViewExtension.swift in Sources */,
 				F57F9CCC1EB2389400133191 /* UILabelExtension.swift in Sources */,
 				F53FCE0B1EB7803C00F9BF38 /* Path.swift in Sources */,
 				F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */,
