@@ -14,6 +14,7 @@
 		F51169741EB7BD7A004DF356 /* RouteStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169731EB7BD7A004DF356 /* RouteStationTableViewCell.swift */; };
 		F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */; };
 		F51169781EB85B43004DF356 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169771EB85B43004DF356 /* DateExtension.swift */; };
+		F511697A1EB86361004DF356 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169791EB86361004DF356 /* TimeIntervalExtension.swift */; };
 		F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F46451EAFB9760040903E /* RoutePanelView.swift */; };
 		F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51F46481EAFBBC90040903E /* RoutePanelView.xib */; };
 		F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F464A1EB11F180040903E /* GeolocationManager.swift */; };
@@ -46,6 +47,7 @@
 		F51169731EB7BD7A004DF356 /* RouteStationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteStationTableViewCell.swift; sourceTree = "<group>"; };
 		F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteStationTableViewCell.xib; sourceTree = "<group>"; };
 		F51169771EB85B43004DF356 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F51169791EB86361004DF356 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 		F51F46451EAFB9760040903E /* RoutePanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePanelView.swift; sourceTree = "<group>"; };
 		F51F46481EAFBBC90040903E /* RoutePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePanelView.xib; sourceTree = "<group>"; };
 		F51F464A1EB11F180040903E /* GeolocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */,
+				F51169791EB86361004DF356 /* TimeIntervalExtension.swift */,
 				F51169771EB85B43004DF356 /* DateExtension.swift */,
 				F57F9CCB1EB2389400133191 /* UILabelExtension.swift */,
 				A80A47051EB364DB002A1324 /* UITableViewExtension.swift */,
@@ -294,6 +297,7 @@
 				A80A47031EB35C22002A1324 /* SearchStantionTableViewCell.swift in Sources */,
 				A80A47061EB364DB002A1324 /* UITableViewExtension.swift in Sources */,
 				F53FCE0D1EB7805500F9BF38 /* DijkstraAlgorithm.swift in Sources */,
+				F511697A1EB86361004DF356 /* TimeIntervalExtension.swift in Sources */,
 				F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */,
 				F51169741EB7BD7A004DF356 /* RouteStationTableViewCell.swift in Sources */,
 				F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */,

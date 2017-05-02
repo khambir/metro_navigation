@@ -16,12 +16,14 @@ class RouteViewController: UIViewController {
         didSet {
             routePanelView.toButton.setTitle(toMetroStation?.name, for: .normal)
             buildRoute()
+            updateRouteInfo()
         }
     }
     fileprivate var fromMetroStation: MetroStation? {
         didSet {
             routePanelView.fromButton.setTitle(fromMetroStation?.name, for: .normal)
             buildRoute()
+            updateRouteInfo()
         }
     }
     fileprivate var routePoint = RoutePoint.from
@@ -29,6 +31,7 @@ class RouteViewController: UIViewController {
     fileprivate var metroStations = MetroNavigation.shared.metroStations
     fileprivate var paths: [Path] = [] {
         didSet {
+            routePanelView.routeInfoView.isHidden = paths.isEmpty
             tableView.reloadData()
         }
     }
@@ -53,6 +56,19 @@ class RouteViewController: UIViewController {
                 return
         }
         paths = shortestPath.getHistory(from: fromMetroStation)
+    }
+    
+    private func updateRouteInfo() {
+        let travelTime = TimeInterval((paths.last?.total ?? 0) * 60)
+        var travelTimeString = ""
+        if travelTime.dateComponents.hours > 0 {
+            travelTimeString += "\(TimeInterval(travelTime).dateComponents.hours)" + " hr "
+        }
+        if travelTime.dateComponents.minutes > 0 {
+            travelTimeString += "\(TimeInterval(travelTime).dateComponents.minutes)" + " min"
+        }
+        routePanelView.travelTimeLabel.text = travelTimeString
+        routePanelView.arriveTimeLabel.text = "Arrive at " + Date().addingTimeInterval(travelTime).timeString
     }
     
     // MARK: - UIViewController functions

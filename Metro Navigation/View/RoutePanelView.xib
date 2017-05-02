@@ -11,8 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RoutePanelView" customModule="Metro_Navigation" customModuleProvider="target">
             <connections>
+                <outlet property="arriveTimeLabel" destination="rhH-Mo-jsw" id="1cQ-dZ-BgU"/>
                 <outlet property="fromButton" destination="WJA-Ai-ePn" id="55j-R3-MI6"/>
+                <outlet property="routeInfoView" destination="Ard-xa-v9J" id="Xfn-2d-Lae"/>
                 <outlet property="toButton" destination="9zr-eQ-Bwa" id="FuC-E7-SmI"/>
+                <outlet property="travelTimeLabel" destination="q15-dk-0WE" id="9aB-Bn-Tgj"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -80,7 +83,7 @@
                         <constraint firstAttribute="trailing" secondItem="qlN-3x-3yv" secondAttribute="trailing" id="wSm-Lz-Hbf"/>
                     </constraints>
                 </stackView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-xa-v9J">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-xa-v9J">
                     <rect key="frame" x="0.0" y="66" width="341" height="88"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q15-dk-0WE">

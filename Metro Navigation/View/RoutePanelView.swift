@@ -22,6 +22,9 @@ class RoutePanelView: UIView {
     // MARK: - Outlets
     @IBOutlet weak var fromButton: UIButton!
     @IBOutlet weak var toButton: UIButton!
+    @IBOutlet weak var travelTimeLabel: UILabel!
+    @IBOutlet weak var arriveTimeLabel: UILabel!
+    @IBOutlet weak var routeInfoView: UIView!
     
     // MARK: - Initializers
     override init(frame: CGRect) {
