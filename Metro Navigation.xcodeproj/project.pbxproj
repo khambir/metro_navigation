@@ -15,7 +15,6 @@
 		F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */; };
 		F51169781EB85B43004DF356 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169771EB85B43004DF356 /* DateExtension.swift */; };
 		F511697A1EB86361004DF356 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169791EB86361004DF356 /* TimeIntervalExtension.swift */; };
-		F511697D1EB86ADF004DF356 /* StationPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511697C1EB86ADF004DF356 /* StationPopUpView.xib */; };
 		F511697F1EB86CB6004DF356 /* StationPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511697E1EB86CB6004DF356 /* StationPopUpView.swift */; };
 		F51169811EB87315004DF356 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169801EB87315004DF356 /* UIViewExtension.swift */; };
 		F51169841EB885A9004DF356 /* LocationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169831EB885A9004DF356 /* LocationUtil.swift */; };
@@ -23,8 +22,13 @@
 		F51169881EB8861F004DF356 /* YandexNavigatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169871EB8861F004DF356 /* YandexNavigatorUtil.swift */; };
 		F511698A1EB8862F004DF356 /* AppleMapsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169891EB8862F004DF356 /* AppleMapsUtil.swift */; };
 		F511698C1EB8863C004DF356 /* GoogleMapsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */; };
+		F51169951EB89EBF004DF356 /* RouteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51169971EB89EBF004DF356 /* RouteViewController.storyboard */; };
+		F51169991EB89F27004DF356 /* SearchTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F511699B1EB89F27004DF356 /* SearchTableViewController.storyboard */; };
+		F511699E1EB8A103004DF356 /* StationPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51169A01EB8A103004DF356 /* StationPopUpView.xib */; };
+		F51169A31EB8A14F004DF356 /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51169A51EB8A14F004DF356 /* RoutePanelView.xib */; };
+		F51169AA1EB8A303004DF356 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F51169AC1EB8A303004DF356 /* Localizable.strings */; };
+		F51169AF1EB8A321004DF356 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169AE1EB8A321004DF356 /* StringExtension.swift */; };
 		F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F46451EAFB9760040903E /* RoutePanelView.swift */; };
-		F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51F46481EAFBBC90040903E /* RoutePanelView.xib */; };
 		F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F464A1EB11F180040903E /* GeolocationManager.swift */; };
 		F53FCE071EB77F4B00F9BF38 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE061EB77F4B00F9BF38 /* Vertex.swift */; };
 		F53FCE091EB77F6200F9BF38 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53FCE081EB77F6200F9BF38 /* Edge.swift */; };
@@ -40,10 +44,8 @@
 		F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */; };
 		F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBE21EAEFB450081A84B /* Assets.xcassets */; };
 		F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */; };
-		F5BACBF21EAEFE780081A84B /* RouteViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */; };
 		F5BACBF41EAEFEA00081A84B /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */; };
 		F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */; };
-		F5BACBF81EAEFFDA0081A84B /* SearchTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */; };
 		F5BACBFB1EAF007D0081A84B /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +58,6 @@
 		F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteStationTableViewCell.xib; sourceTree = "<group>"; };
 		F51169771EB85B43004DF356 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F51169791EB86361004DF356 /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
-		F511697C1EB86ADF004DF356 /* StationPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationPopUpView.xib; sourceTree = "<group>"; };
 		F511697E1EB86CB6004DF356 /* StationPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationPopUpView.swift; sourceTree = "<group>"; };
 		F51169801EB87315004DF356 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		F51169831EB885A9004DF356 /* LocationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtil.swift; sourceTree = "<group>"; };
@@ -64,8 +65,18 @@
 		F51169871EB8861F004DF356 /* YandexNavigatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexNavigatorUtil.swift; sourceTree = "<group>"; };
 		F51169891EB8862F004DF356 /* AppleMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMapsUtil.swift; sourceTree = "<group>"; };
 		F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsUtil.swift; sourceTree = "<group>"; };
+		F51169961EB89EBF004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RouteViewController.storyboard; sourceTree = "<group>"; };
+		F51169981EB89EE5004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RouteViewController.strings; sourceTree = "<group>"; };
+		F511699A1EB89F27004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchTableViewController.storyboard; sourceTree = "<group>"; };
+		F511699D1EB89F2B004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SearchTableViewController.strings; sourceTree = "<group>"; };
+		F511699F1EB8A103004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StationPopUpView.xib; sourceTree = "<group>"; };
+		F51169A21EB8A106004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/StationPopUpView.strings; sourceTree = "<group>"; };
+		F51169A41EB8A14F004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RoutePanelView.xib; sourceTree = "<group>"; };
+		F51169A71EB8A151004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RoutePanelView.strings; sourceTree = "<group>"; };
+		F51169AB1EB8A303004DF356 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F51169AD1EB8A305004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F51169AE1EB8A321004DF356 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F51F46451EAFB9760040903E /* RoutePanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePanelView.swift; sourceTree = "<group>"; };
-		F51F46481EAFBBC90040903E /* RoutePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePanelView.xib; sourceTree = "<group>"; };
 		F51F464A1EB11F180040903E /* GeolocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
 		F53FCE061EB77F4B00F9BF38 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		F53FCE081EB77F6200F9BF38 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
@@ -83,10 +94,8 @@
 		F5BACBE21EAEFB450081A84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5BACBE51EAEFB450081A84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5BACBE71EAEFB450081A84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RouteViewController.storyboard; sourceTree = "<group>"; };
 		F5BACBF31EAEFEA00081A84B /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		F5BACBF51EAEFFA20081A84B /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
-		F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchTableViewController.storyboard; sourceTree = "<group>"; };
 		F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +124,7 @@
 		F511697B1EB86AC3004DF356 /* StationPopUp */ = {
 			isa = PBXGroup;
 			children = (
-				F511697C1EB86ADF004DF356 /* StationPopUpView.xib */,
+				F51169A01EB8A103004DF356 /* StationPopUpView.xib */,
 				F511697E1EB86CB6004DF356 /* StationPopUpView.swift */,
 			);
 			name = StationPopUp;
@@ -137,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F51F46451EAFB9760040903E /* RoutePanelView.swift */,
-				F51F46481EAFBBC90040903E /* RoutePanelView.xib */,
+				F51169A51EB8A14F004DF356 /* RoutePanelView.xib */,
 			);
 			name = RoutePanel;
 			sourceTree = "<group>";
@@ -162,6 +171,7 @@
 				F57F9CCB1EB2389400133191 /* UILabelExtension.swift */,
 				A80A47051EB364DB002A1324 /* UITableViewExtension.swift */,
 				F51169801EB87315004DF356 /* UIViewExtension.swift */,
+				F51169AE1EB8A321004DF356 /* StringExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -225,8 +235,8 @@
 				F511697B1EB86AC3004DF356 /* StationPopUp */,
 				A80A47041EB35C2B002A1324 /* Cells */,
 				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
-				F5BACBF11EAEFE780081A84B /* RouteViewController.storyboard */,
-				F5BACBF71EAEFFDA0081A84B /* SearchTableViewController.storyboard */,
+				F51169971EB89EBF004DF356 /* RouteViewController.storyboard */,
+				F511699B1EB89F27004DF356 /* SearchTableViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +246,7 @@
 			children = (
 				F5BACBE21EAEFB450081A84B /* Assets.xcassets */,
 				F5BACBE71EAEFB450081A84B /* Info.plist */,
+				F51169AC1EB8A303004DF356 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -295,6 +306,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F5BACBCF1EAEFB450081A84B;
 			productRefGroup = F5BACBD91EAEFB450081A84B /* Products */;
@@ -311,15 +323,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5BACBF81EAEFFDA0081A84B /* SearchTableViewController.storyboard in Resources */,
-				F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */,
+				F51169991EB89F27004DF356 /* SearchTableViewController.storyboard in Resources */,
+				F51169A31EB8A14F004DF356 /* RoutePanelView.xib in Resources */,
+				F51169AA1EB8A303004DF356 /* Localizable.strings in Resources */,
 				F57F9CC81EB22ABF00133191 /* kyivMetroStations.plist in Resources */,
 				F53FCE111EB78AFA00F9BF38 /* kyivMetroRoutes.plist in Resources */,
 				F5BACBE61EAEFB450081A84B /* LaunchScreen.storyboard in Resources */,
 				F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */,
-				F511697D1EB86ADF004DF356 /* StationPopUpView.xib in Resources */,
+				F511699E1EB8A103004DF356 /* StationPopUpView.xib in Resources */,
 				A80A47011EB35C18002A1324 /* SearchStantionTableViewCell.xib in Resources */,
-				F5BACBF21EAEFE780081A84B /* RouteViewController.storyboard in Resources */,
+				F51169951EB89EBF004DF356 /* RouteViewController.storyboard in Resources */,
 				F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +356,7 @@
 				F511697A1EB86361004DF356 /* TimeIntervalExtension.swift in Sources */,
 				F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */,
 				F51169741EB7BD7A004DF356 /* RouteStationTableViewCell.swift in Sources */,
+				F51169AF1EB8A321004DF356 /* StringExtension.swift in Sources */,
 				F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */,
 				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
 				F51169721EB7A0AA004DF356 /* MetroNavigation.swift in Sources */,
@@ -365,6 +379,51 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F51169971EB89EBF004DF356 /* RouteViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51169961EB89EBF004DF356 /* Base */,
+				F51169981EB89EE5004DF356 /* ru */,
+			);
+			name = RouteViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		F511699B1EB89F27004DF356 /* SearchTableViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511699A1EB89F27004DF356 /* Base */,
+				F511699D1EB89F2B004DF356 /* ru */,
+			);
+			name = SearchTableViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		F51169A01EB8A103004DF356 /* StationPopUpView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511699F1EB8A103004DF356 /* Base */,
+				F51169A21EB8A106004DF356 /* ru */,
+			);
+			name = StationPopUpView.xib;
+			sourceTree = "<group>";
+		};
+		F51169A51EB8A14F004DF356 /* RoutePanelView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51169A41EB8A14F004DF356 /* Base */,
+				F51169A71EB8A151004DF356 /* ru */,
+			);
+			name = RoutePanelView.xib;
+			sourceTree = "<group>";
+		};
+		F51169AC1EB8A303004DF356 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F51169AB1EB8A303004DF356 /* en */,
+				F51169AD1EB8A305004DF356 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -381,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -432,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "To"; ObjectID = "9zr-eQ-Bwa"; */
+"9zr-eQ-Bwa.normalTitle" = "Куда";
+
+/* Class = "UIButton"; normalTitle = "From"; ObjectID = "WJA-Ai-ePn"; */
+"WJA-Ai-ePn.normalTitle" = "Откуда";
+
+/* Class = "UILabel"; text = "10 min"; ObjectID = "q15-dk-0WE"; */
+"q15-dk-0WE.text" = "10 min";
+
+/* Class = "UILabel"; text = "Arrive at 4:09 PM"; ObjectID = "rhH-Mo-jsw"; */
+"rhH-Mo-jsw.text" = "Arrive at 4:09 PM";

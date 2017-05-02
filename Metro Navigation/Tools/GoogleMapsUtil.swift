@@ -13,7 +13,7 @@ struct GoogleMapsUtil: LocationUtil {
     
     // MARK: - Properties
     var applicationName: String {
-        return "GoogleMaps"
+        return "GoogleMaps".localized
     }
     
     var applicationPath: String {

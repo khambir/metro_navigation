@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F60a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VDT-HG-Ur2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metro Navigation-->
+        <scene sceneID="L3I-D5-gUD">
+            <objects>
+                <viewController id="bpl-pp-9Tq" customClass="RouteViewController" customModule="Metro_Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JFY-l8-qGI"/>
+                        <viewControllerLayoutGuide type="bottom" id="yxH-ti-Vte"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W7R-cO-9oG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Hq-CkM">
+                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bpl-pp-9Tq" id="dRs-m8-uNc"/>
+                                    <outlet property="delegate" destination="bpl-pp-9Tq" id="YRY-Ik-sMV"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PD5-0X-UXs" customClass="RoutePanelView" customModule="Metro_Navigation" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="154"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="8cM-Cw-WHo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="agd-Hq-CkM" secondAttribute="trailing" id="0EL-DQ-ayY"/>
+                            <constraint firstItem="PD5-0X-UXs" firstAttribute="top" secondItem="JFY-l8-qGI" secondAttribute="bottom" id="4yw-R9-gJB"/>
+                            <constraint firstItem="agd-Hq-CkM" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="MaK-aM-yaM"/>
+                            <constraint firstItem="yxH-ti-Vte" firstAttribute="top" secondItem="agd-Hq-CkM" secondAttribute="bottom" id="fyA-CW-o6y"/>
+                            <constraint firstAttribute="trailing" secondItem="PD5-0X-UXs" secondAttribute="trailing" id="xij-n6-hJl"/>
+                            <constraint firstItem="PD5-0X-UXs" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="yKj-j3-LyL"/>
+                            <constraint firstItem="agd-Hq-CkM" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" constant="-22" id="zdt-8d-h2N"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Metro Navigation" id="ku8-aK-DwF"/>
+                    <connections>
+                        <outlet property="routePanelView" destination="PD5-0X-UXs" id="N7k-9G-u7T"/>
+                        <outlet property="stationPopUpView" destination="Qoq-6u-5vb" id="uhn-Pb-fRB"/>
+                        <outlet property="tableView" destination="agd-Hq-CkM" id="eWT-BH-z12"/>
+                        <segue destination="L20-UQ-85E" kind="showDetail" identifier="showSearchView" id="yfN-GZ-uZQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SuA-as-Ypd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Qoq-6u-5vb" customClass="StationPopUpView" customModule="Metro_Navigation" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="220" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="867.5" y="103.5"/>
+        </scene>
+        <!--SearchTableViewController-->
+        <scene sceneID="II6-Tz-Hlp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchTableViewController" id="L20-UQ-85E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NP7-Ho-TYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="103"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ibf-F9-bzU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VDT-HG-Ur2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="8cx-k7-QB1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.22991505265235901" green="0.50088357925415039" blue="0.96033650636672974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bpl-pp-9Tq" kind="relationship" relationship="rootViewController" id="osJ-XV-HIg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqs-ow-9Lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="103.89805097451276"/>
+        </scene>
+    </scenes>
+</document>

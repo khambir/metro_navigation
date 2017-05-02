@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "To"; ObjectID = "2aI-ZC-kSy"; */
+"2aI-ZC-kSy.normalTitle" = "Сюда";
+
+/* Class = "UIButton"; normalTitle = "From"; ObjectID = "71B-Ug-Qxe"; */
+"71B-Ug-Qxe.normalTitle" = "Отсюда";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XxB-yG-5iE"; */
+"XxB-yG-5iE.text" = "Label";

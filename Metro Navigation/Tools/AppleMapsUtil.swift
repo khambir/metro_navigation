@@ -14,7 +14,7 @@ struct AppleMapsUtil: LocationUtil {
     
     // MARK: - Properties
     var applicationName: String {
-        return "AppleMaps"
+        return "AppleMaps".localized
     }
     
     var applicationPath: String {

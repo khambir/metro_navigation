@@ -63,13 +63,13 @@ class RouteViewController: UIViewController {
         let travelTime = TimeInterval((paths.last?.total ?? 0) * 60)
         var travelTimeString = ""
         if travelTime.dateComponents.hours > 0 {
-            travelTimeString += "\(TimeInterval(travelTime).dateComponents.hours)" + " hr "
+            travelTimeString += "\(TimeInterval(travelTime).dateComponents.hours) " + "hour".localized
         }
         if travelTime.dateComponents.minutes > 0 {
-            travelTimeString += "\(TimeInterval(travelTime).dateComponents.minutes)" + " min"
+            travelTimeString += "\(TimeInterval(travelTime).dateComponents.minutes) " + "minutes".localized
         }
         routePanelView.travelTimeLabel.text = travelTimeString
-        routePanelView.arriveTimeLabel.text = "Arrive at " + Date().addingTimeInterval(travelTime).timeString
+        routePanelView.arriveTimeLabel.text = "arriveAt".localized + Date().addingTimeInterval(travelTime).timeString
     }
     
     // MARK: - UIViewController functions
@@ -150,7 +150,7 @@ extension RouteViewController: RouteStationTableViewCellDelegate {
     }
     
     private func showLocationUtilsList(for metroStation: MetroStation) {
-        let alert = UIAlertController(title: "Get direction", message: nil, preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "getDirection".localized, message: nil, preferredStyle: .actionSheet)
         for locationUtil in LocationUtilManager.installedUtilities {
             let utilAction = UIAlertAction(title: locationUtil.applicationName, style: .default) { _ in
                 locationUtil.openAndBuildRoute(to: metroStation.location.coordinate)
@@ -158,7 +158,7 @@ extension RouteViewController: RouteStationTableViewCellDelegate {
             alert.addAction(utilAction)
         }
         
-        let cancel = UIAlertAction(title: "Cancel", style: .cancel)
+        let cancel = UIAlertAction(title: "cancel".localized, style: .cancel)
         alert.addAction(cancel)
         present(alert, animated: true)
     }

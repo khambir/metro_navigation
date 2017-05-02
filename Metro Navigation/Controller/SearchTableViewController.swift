@@ -86,7 +86,7 @@ extension SearchTableViewController {
         cell.branchIndicatorView.backgroundColor = dataSource[indexPath.row].color
         if let deviceLocation = geolocationManager.location {
             let distanceToStation = round(dataSource[indexPath.row].location.distance(from: deviceLocation) / 1000 * 10) / 10
-            cell.distanceLabel.text = "\(distanceToStation) km"
+            cell.distanceLabel.text = "\(distanceToStation) " + "km".localized
         }
         return cell
     }

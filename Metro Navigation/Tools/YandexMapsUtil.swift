@@ -13,7 +13,7 @@ struct YandexMapsUtil: LocationUtil {
     
     // MARK: - Properties
     var applicationName: String {
-        return "YandexMaps"
+        return "YandexMaps".localized
     }
     
     var applicationPath: String {
