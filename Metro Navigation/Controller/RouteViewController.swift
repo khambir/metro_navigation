@@ -39,6 +39,7 @@ class RouteViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var routePanelView: RoutePanelView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var stationPopUpView: StationPopUpView!
     
     // MARK: - Methods
     private func initCell() {
@@ -76,8 +77,14 @@ class RouteViewController: UIViewController {
         super.viewDidLoad()
         Route.loadAll()
         initCell()
+        stationPopUpView.delegate = self
         geolocationManager.geoManagerDelegate = self
         routePanelView.delegate = self
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        stationPopUpView.removeFromSuperview()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -92,8 +99,37 @@ class RouteViewController: UIViewController {
     
 }
 
+// MARK: - StationPopUpViewDelegate functions
+extension RouteViewController: StationPopUpViewDelegate {
+    
+    func stationPopUpViewToButtonDidTap(_ stationPupUpView: StationPopUpView) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return }
+        toMetroStation = paths[selectedIndexPath.row].destination as? MetroStation
+        stationPopUpView.removeFromSuperview()
+    }
+    
+    func stationPopUpViewFromButtonDidTap(_ stationPupUpView: StationPopUpView) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return }
+        fromMetroStation = paths[selectedIndexPath.row].destination as? MetroStation
+        stationPopUpView.removeFromSuperview()
+    }
+    
+}
+
 // MARK: - UITableViewDelegate functions
 extension RouteViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedIndexPath = tableView.indexPathForSelectedRow else { return }
+        guard let selectedStation = paths[selectedIndexPath.row].destination as? MetroStation else { return }
+        stationPopUpView.stationNameLabel.text = selectedStation.name
+        stationPopUpView.branchIndicatorView.backgroundColor = selectedStation.color
+        stationPopUpView.add(to: view)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        stationPopUpView.removeFromSuperview()
+    }
     
 }
 
@@ -135,6 +171,7 @@ extension RouteViewController: RoutePanelViewDelegate {
             fromMetroStation = toMetroStation
             toMetroStation = tmp
         }
+        stationPopUpView.removeFromSuperview()
     }
     
 }
