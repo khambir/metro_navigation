@@ -39,7 +39,8 @@ class RouteViewController: UIViewController {
     
     // MARK: - Methods
     private func initCell() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let nib = UINib(nibName: String(describing: RouteStationTableViewCell.self), bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: RouteStationTableViewCell.identifier)
     }
     
     private func buildRoute() {
@@ -84,10 +85,12 @@ extension RouteViewController: UITableViewDelegate {
 extension RouteViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RouteStationTableViewCell.identifier) as? RouteStationTableViewCell else { return UITableViewCell() }
         guard let stationID = paths[indexPath.row].destination?.id, let metroStation = (metroStations.filter { $0.id == stationID }).first else { return UITableViewCell() }
-        cell.textLabel?.text = metroStation.name
-        cell.detailTextLabel?.text = "\(paths[indexPath.row].total)"
+        cell.stationNameLabel.text = metroStation.name
+        let arriveDate = Date().addingTimeInterval(TimeInterval(paths[indexPath.row].total * 60))
+        cell.timeLabel.text = arriveDate.timeString
+        cell.branchIndicatorImageView.tintColor = metroStation.color
         return cell
     }
     

@@ -11,6 +11,9 @@
 		A80A47031EB35C22002A1324 /* SearchStantionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */; };
 		A80A47061EB364DB002A1324 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80A47051EB364DB002A1324 /* UITableViewExtension.swift */; };
 		F51169721EB7A0AA004DF356 /* MetroNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169711EB7A0AA004DF356 /* MetroNavigation.swift */; };
+		F51169741EB7BD7A004DF356 /* RouteStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169731EB7BD7A004DF356 /* RouteStationTableViewCell.swift */; };
+		F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */; };
+		F51169781EB85B43004DF356 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169771EB85B43004DF356 /* DateExtension.swift */; };
 		F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F46451EAFB9760040903E /* RoutePanelView.swift */; };
 		F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51F46481EAFBBC90040903E /* RoutePanelView.xib */; };
 		F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F464A1EB11F180040903E /* GeolocationManager.swift */; };
@@ -40,6 +43,9 @@
 		A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchStantionTableViewCell.swift; sourceTree = "<group>"; };
 		A80A47051EB364DB002A1324 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		F51169711EB7A0AA004DF356 /* MetroNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroNavigation.swift; sourceTree = "<group>"; };
+		F51169731EB7BD7A004DF356 /* RouteStationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteStationTableViewCell.swift; sourceTree = "<group>"; };
+		F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteStationTableViewCell.xib; sourceTree = "<group>"; };
+		F51169771EB85B43004DF356 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		F51F46451EAFB9760040903E /* RoutePanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePanelView.swift; sourceTree = "<group>"; };
 		F51F46481EAFBBC90040903E /* RoutePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePanelView.xib; sourceTree = "<group>"; };
 		F51F464A1EB11F180040903E /* GeolocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
@@ -82,6 +88,8 @@
 			children = (
 				A80A47001EB35C18002A1324 /* SearchStantionTableViewCell.xib */,
 				A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */,
+				F51169731EB7BD7A004DF356 /* RouteStationTableViewCell.swift */,
+				F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */,
+				F51169771EB85B43004DF356 /* DateExtension.swift */,
 				F57F9CCB1EB2389400133191 /* UILabelExtension.swift */,
 				A80A47051EB364DB002A1324 /* UITableViewExtension.swift */,
 			);
@@ -267,6 +276,7 @@
 				F5BACBE31EAEFB450081A84B /* Assets.xcassets in Resources */,
 				A80A47011EB35C18002A1324 /* SearchStantionTableViewCell.xib in Resources */,
 				F5BACBF21EAEFE780081A84B /* RouteViewController.storyboard in Resources */,
+				F51169761EB7BD85004DF356 /* RouteStationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BACBFB1EAF007D0081A84B /* SegueHandler.swift in Sources */,
+				F51169781EB85B43004DF356 /* DateExtension.swift in Sources */,
 				F57F9CC41EB1ABB300133191 /* UIColorExtension.swift in Sources */,
 				F53FCE091EB77F6200F9BF38 /* Edge.swift in Sources */,
 				A80A47031EB35C22002A1324 /* SearchStantionTableViewCell.swift in Sources */,
 				A80A47061EB364DB002A1324 /* UITableViewExtension.swift in Sources */,
 				F53FCE0D1EB7805500F9BF38 /* DijkstraAlgorithm.swift in Sources */,
 				F5BACBDC1EAEFB450081A84B /* AppDelegate.swift in Sources */,
+				F51169741EB7BD7A004DF356 /* RouteStationTableViewCell.swift in Sources */,
 				F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */,
 				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
 				F51169721EB7A0AA004DF356 /* MetroNavigation.swift in Sources */,
