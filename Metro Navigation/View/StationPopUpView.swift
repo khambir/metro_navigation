@@ -9,8 +9,8 @@
 import UIKit
 
 protocol StationPopUpViewDelegate: class {
-    func stationPupUpViewFromButtonDidTap(_ stationPupUpView: StationPopUpView)
-    func stationPupUpViewToButtonDidTap(_ stationPupUpView: StationPopUpView)
+    func stationPopUpViewFromButtonDidTap(_ stationPupUpView: StationPopUpView)
+    func stationPopUpViewToButtonDidTap(_ stationPupUpView: StationPopUpView)
 }
 
 class StationPopUpView: UIView {
@@ -50,8 +50,14 @@ class StationPopUpView: UIView {
     }
     
     internal func add(to view: UIView) {
-        center = view.center
+        removeFromSuperview()
+        let startPoint = CGPoint(x: view.center.x, y: view.frame.maxY + bounds.maxY / 2)
+        center = startPoint
         view.addSubview(self)
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.center = view.center
+        }
     }
 
 }
@@ -60,11 +66,11 @@ class StationPopUpView: UIView {
 extension StationPopUpView {
     
     @IBAction func fromButtonAction(_ sender: UIButton) {
-        delegate?.stationPupUpViewFromButtonDidTap(self)
+        delegate?.stationPopUpViewFromButtonDidTap(self)
     }
     
     @IBAction func toButtonAction(_ sender: UIButton) {
-        delegate?.stationPupUpViewToButtonDidTap(self)
+        delegate?.stationPopUpViewToButtonDidTap(self)
     }
     
 }
