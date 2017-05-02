@@ -38,7 +38,7 @@
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                    <integer key="value" value="12"/>
+                                    <integer key="value" value="11"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
