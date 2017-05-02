@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="agd-Hq-CkM">
-                                <rect key="frame" x="0.0" y="174" width="375" height="493"/>
+                                <rect key="frame" x="0.0" y="196" width="375" height="471"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="bpl-pp-9Tq" id="dRs-m8-uNc"/>
@@ -45,7 +45,7 @@
                             <constraint firstItem="yxH-ti-Vte" firstAttribute="top" secondItem="agd-Hq-CkM" secondAttribute="bottom" id="fyA-CW-o6y"/>
                             <constraint firstAttribute="trailing" secondItem="PD5-0X-UXs" secondAttribute="trailing" id="xij-n6-hJl"/>
                             <constraint firstItem="PD5-0X-UXs" firstAttribute="leading" secondItem="W7R-cO-9oG" secondAttribute="leading" id="yKj-j3-LyL"/>
-                            <constraint firstItem="agd-Hq-CkM" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" constant="-44" id="zdt-8d-h2N"/>
+                            <constraint firstItem="agd-Hq-CkM" firstAttribute="top" secondItem="PD5-0X-UXs" secondAttribute="bottom" constant="-22" id="zdt-8d-h2N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Metro Navigation" id="ku8-aK-DwF"/>
