@@ -19,20 +19,32 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6D-cW-gNt">
-                        <rect key="frame" x="38" y="8" width="251" height="50.5"/>
+                        <rect key="frame" x="38" y="8" width="41.5" height="50.5"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00.00 km" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gC-tZ-ctE">
-                        <rect key="frame" x="297" y="8" width="70" height="50.5"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIr-z9-R7J">
+                        <rect key="frame" x="297" y="21" width="70" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eY2-Wb-Uh4">
+                                <rect key="frame" x="0.0" y="0.0" width="10" height="25"/>
+                                <state key="normal" image="map_icon"/>
+                                <connections>
+                                    <action selector="mapButtonAction:" destination="qZr-nJ-ave" eventType="touchUpInside" id="EIC-lk-krw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30 AM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gC-tZ-ctE">
+                                <rect key="frame" x="10" y="0.0" width="60" height="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <constraints>
-                            <constraint firstAttribute="width" constant="70" id="58O-l3-7sa"/>
+                            <constraint firstAttribute="width" constant="70" id="vP9-Pe-AJX"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    </stackView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indicator" translatesAutoresizingMaskIntoConstraints="NO" id="Otp-A9-Vd4">
                         <rect key="frame" x="8" y="0.0" width="22" height="67"/>
                         <constraints>
@@ -43,18 +55,17 @@
                 <constraints>
                     <constraint firstItem="P6D-cW-gNt" firstAttribute="leading" secondItem="Otp-A9-Vd4" secondAttribute="trailing" constant="8" id="JuG-fd-JmR"/>
                     <constraint firstItem="Otp-A9-Vd4" firstAttribute="top" secondItem="tgr-H1-VIP" secondAttribute="top" id="Rfg-Bk-AXJ"/>
-                    <constraint firstItem="8gC-tZ-ctE" firstAttribute="top" secondItem="tgr-H1-VIP" secondAttribute="top" constant="8" id="UKV-2l-zGF"/>
-                    <constraint firstAttribute="trailing" secondItem="8gC-tZ-ctE" secondAttribute="trailing" constant="8" id="aIe-Qf-zkB"/>
-                    <constraint firstItem="8gC-tZ-ctE" firstAttribute="leading" secondItem="P6D-cW-gNt" secondAttribute="trailing" constant="8" id="g2H-Pg-xaW"/>
+                    <constraint firstItem="vIr-z9-R7J" firstAttribute="centerY" secondItem="tgr-H1-VIP" secondAttribute="centerY" id="SNP-Mf-s3c"/>
+                    <constraint firstAttribute="trailing" secondItem="vIr-z9-R7J" secondAttribute="trailing" constant="8" id="efV-ES-jt5"/>
                     <constraint firstAttribute="bottom" secondItem="P6D-cW-gNt" secondAttribute="bottom" constant="8" id="jfo-kh-lnW"/>
                     <constraint firstItem="P6D-cW-gNt" firstAttribute="top" secondItem="tgr-H1-VIP" secondAttribute="top" constant="8" id="md9-xD-otr"/>
                     <constraint firstItem="Otp-A9-Vd4" firstAttribute="leading" secondItem="tgr-H1-VIP" secondAttribute="leading" constant="8" id="oVl-J0-oS1"/>
-                    <constraint firstAttribute="bottom" secondItem="8gC-tZ-ctE" secondAttribute="bottom" constant="8" id="tkO-UA-ysT"/>
                     <constraint firstAttribute="bottom" secondItem="Otp-A9-Vd4" secondAttribute="bottom" constant="-1" id="uLh-DC-0Sr"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="branchIndicatorImageView" destination="Otp-A9-Vd4" id="Rq4-2X-hwT"/>
+                <outlet property="mapButton" destination="eY2-Wb-Uh4" id="YxC-rW-qcV"/>
                 <outlet property="stationNameLabel" destination="P6D-cW-gNt" id="l4k-4B-K3D"/>
                 <outlet property="timeLabel" destination="8gC-tZ-ctE" id="Dj7-XZ-J4k"/>
             </connections>
@@ -63,5 +74,6 @@
     </objects>
     <resources>
         <image name="indicator" width="22" height="67"/>
+        <image name="map_icon" width="25" height="25"/>
     </resources>
 </document>

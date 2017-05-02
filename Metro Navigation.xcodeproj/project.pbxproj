@@ -18,6 +18,11 @@
 		F511697D1EB86ADF004DF356 /* StationPopUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511697C1EB86ADF004DF356 /* StationPopUpView.xib */; };
 		F511697F1EB86CB6004DF356 /* StationPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511697E1EB86CB6004DF356 /* StationPopUpView.swift */; };
 		F51169811EB87315004DF356 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169801EB87315004DF356 /* UIViewExtension.swift */; };
+		F51169841EB885A9004DF356 /* LocationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169831EB885A9004DF356 /* LocationUtil.swift */; };
+		F51169861EB8860D004DF356 /* YandexMapsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169851EB8860D004DF356 /* YandexMapsUtil.swift */; };
+		F51169881EB8861F004DF356 /* YandexNavigatorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169871EB8861F004DF356 /* YandexNavigatorUtil.swift */; };
+		F511698A1EB8862F004DF356 /* AppleMapsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51169891EB8862F004DF356 /* AppleMapsUtil.swift */; };
+		F511698C1EB8863C004DF356 /* GoogleMapsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */; };
 		F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F46451EAFB9760040903E /* RoutePanelView.swift */; };
 		F51F46491EAFBBC90040903E /* RoutePanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51F46481EAFBBC90040903E /* RoutePanelView.xib */; };
 		F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F464A1EB11F180040903E /* GeolocationManager.swift */; };
@@ -54,6 +59,11 @@
 		F511697C1EB86ADF004DF356 /* StationPopUpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationPopUpView.xib; sourceTree = "<group>"; };
 		F511697E1EB86CB6004DF356 /* StationPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationPopUpView.swift; sourceTree = "<group>"; };
 		F51169801EB87315004DF356 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		F51169831EB885A9004DF356 /* LocationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtil.swift; sourceTree = "<group>"; };
+		F51169851EB8860D004DF356 /* YandexMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexMapsUtil.swift; sourceTree = "<group>"; };
+		F51169871EB8861F004DF356 /* YandexNavigatorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YandexNavigatorUtil.swift; sourceTree = "<group>"; };
+		F51169891EB8862F004DF356 /* AppleMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMapsUtil.swift; sourceTree = "<group>"; };
+		F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsUtil.swift; sourceTree = "<group>"; };
 		F51F46451EAFB9760040903E /* RoutePanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePanelView.swift; sourceTree = "<group>"; };
 		F51F46481EAFBBC90040903E /* RoutePanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoutePanelView.xib; sourceTree = "<group>"; };
 		F51F464A1EB11F180040903E /* GeolocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeolocationManager.swift; sourceTree = "<group>"; };
@@ -109,6 +119,18 @@
 				F511697E1EB86CB6004DF356 /* StationPopUpView.swift */,
 			);
 			name = StationPopUp;
+			sourceTree = "<group>";
+		};
+		F51169821EB88597004DF356 /* LocationUtil */ = {
+			isa = PBXGroup;
+			children = (
+				F51169831EB885A9004DF356 /* LocationUtil.swift */,
+				F51169851EB8860D004DF356 /* YandexMapsUtil.swift */,
+				F51169871EB8861F004DF356 /* YandexNavigatorUtil.swift */,
+				F51169891EB8862F004DF356 /* AppleMapsUtil.swift */,
+				F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */,
+			);
+			name = LocationUtil;
 			sourceTree = "<group>";
 		};
 		F51F46471EAFBB8D0040903E /* RoutePanel */ = {
@@ -221,6 +243,7 @@
 		F5BACBF91EAF00520081A84B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F51169821EB88597004DF356 /* LocationUtil */,
 				F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */,
 				F53FCE051EB77EFA00F9BF38 /* DijkstraAlgorithm */,
 				F57F9CC21EB1AB9400133191 /* Extensions */,
@@ -308,10 +331,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F511698A1EB8862F004DF356 /* AppleMapsUtil.swift in Sources */,
 				F5BACBFB1EAF007D0081A84B /* SegueHandler.swift in Sources */,
 				F51169781EB85B43004DF356 /* DateExtension.swift in Sources */,
 				F57F9CC41EB1ABB300133191 /* UIColorExtension.swift in Sources */,
 				F53FCE091EB77F6200F9BF38 /* Edge.swift in Sources */,
+				F51169841EB885A9004DF356 /* LocationUtil.swift in Sources */,
 				A80A47031EB35C22002A1324 /* SearchStantionTableViewCell.swift in Sources */,
 				A80A47061EB364DB002A1324 /* UITableViewExtension.swift in Sources */,
 				F53FCE0D1EB7805500F9BF38 /* DijkstraAlgorithm.swift in Sources */,
@@ -321,12 +346,15 @@
 				F51F464B1EB11F180040903E /* GeolocationManager.swift in Sources */,
 				F5BACBF61EAEFFA20081A84B /* SearchTableViewController.swift in Sources */,
 				F51169721EB7A0AA004DF356 /* MetroNavigation.swift in Sources */,
+				F51169861EB8860D004DF356 /* YandexMapsUtil.swift in Sources */,
 				F53FCE0F1EB780FF00F9BF38 /* Route.swift in Sources */,
+				F51169881EB8861F004DF356 /* YandexNavigatorUtil.swift in Sources */,
 				F53FCE071EB77F4B00F9BF38 /* Vertex.swift in Sources */,
 				F51F46461EAFB9760040903E /* RoutePanelView.swift in Sources */,
 				F511697F1EB86CB6004DF356 /* StationPopUpView.swift in Sources */,
 				F57F9CCE1EB245F800133191 /* RoutePoint.swift in Sources */,
 				F57F9CCA1EB22AEA00133191 /* MetroStation.swift in Sources */,
+				F511698C1EB8863C004DF356 /* GoogleMapsUtil.swift in Sources */,
 				F51169811EB87315004DF356 /* UIViewExtension.swift in Sources */,
 				F57F9CCC1EB2389400133191 /* UILabelExtension.swift in Sources */,
 				F53FCE0B1EB7803C00F9BF38 /* Path.swift in Sources */,
