@@ -553,7 +553,7 @@
 			<real>30.430736</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Сырец</string>
 	</dict>
@@ -568,7 +568,7 @@
 			<real>30.448406</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Дорогожичи</string>
 	</dict>
@@ -583,13 +583,13 @@
 			<real>30.482101</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Лукьяновская</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>313</integer>
+		<integer>314</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -598,13 +598,13 @@
 			<real>30.513668</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Золотые ворота</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>314</integer>
+		<integer>315</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -613,13 +613,13 @@
 			<real>30.520684</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Дворец спорта</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>315</integer>
+		<integer>316</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -628,13 +628,13 @@
 			<real>30.531922</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Кловская</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>316</integer>
+		<integer>317</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -643,13 +643,13 @@
 			<real>30.538632</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Печерская</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>317</integer>
+		<integer>318</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -658,13 +658,13 @@
 			<real>30.544462</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Дружбы народов</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>318</integer>
+		<integer>319</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -673,13 +673,13 @@
 			<real>30.559985</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Выдубичи</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>319</integer>
+		<integer>321</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -688,13 +688,13 @@
 			<real>30.604164</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Славутич</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>320</integer>
+		<integer>322</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -703,13 +703,13 @@
 			<real>30.616148</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Осокорки</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>321</integer>
+		<integer>323</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -718,13 +718,13 @@
 			<real>30.63433</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Позняки</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>322</integer>
+		<integer>324</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -733,13 +733,13 @@
 			<real>30.430736</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Харьковская</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>323</integer>
+		<integer>325</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -748,13 +748,13 @@
 			<real>30.665969</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Вырлица</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>324</integer>
+		<integer>326</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -763,13 +763,13 @@
 			<real>30.682974</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Бориспольская</string>
 	</dict>
 	<dict>
 		<key>id</key>
-		<integer>325</integer>
+		<integer>327</integer>
 		<key>location</key>
 		<dict>
 			<key>latitude</key>
@@ -778,7 +778,7 @@
 			<real>30.695918</real>
 		</dict>
 		<key>lineColor</key>
-		<string>#00FF00</string>
+		<string>#007819</string>
 		<key>name</key>
 		<string>Красный хутор</string>
 	</dict>
