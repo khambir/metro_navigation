@@ -63,7 +63,7 @@ class RouteViewController: UIViewController {
         let travelTime = TimeInterval((paths.last?.total ?? 0) * 60)
         var travelTimeString = ""
         if travelTime.dateComponents.hours > 0 {
-            travelTimeString += "\(TimeInterval(travelTime).dateComponents.hours) " + "hour".localized
+            travelTimeString += "\(TimeInterval(travelTime).dateComponents.hours) " + "hour".localized + " "
         }
         if travelTime.dateComponents.minutes > 0 {
             travelTimeString += "\(TimeInterval(travelTime).dateComponents.minutes) " + "minutes".localized
