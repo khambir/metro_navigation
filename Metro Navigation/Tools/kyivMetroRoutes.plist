@@ -7,7 +7,7 @@
 		<integer>210</integer>
 		<key>toID</key>
 		<integer>211</integer>
-		<key>weight</key>
+		<key>timeInterval</key>
 		<integer>3</integer>
 	</dict>
 	<dict>
@@ -15,7 +15,7 @@
 		<integer>211</integer>
 		<key>toID</key>
 		<integer>212</integer>
-		<key>weight</key>
+		<key>timeInterval</key>
 		<integer>3</integer>
 	</dict>
 </array>

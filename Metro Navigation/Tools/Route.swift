@@ -22,13 +22,13 @@ struct Route: Edge {
         
         for route in routes {
             guard
-                    let weight = route["weight"] as? Int,
+                    let timeInterval = route["timeInterval"] as? Int,
                     let fromMetro = (stations.filter { $0.id == route["fromID"] as? Int }).first,
                     let toMetro = (stations.filter{ $0.id == route["toID"] as? Int }).first
                 else { continue }
             
-            fromMetro.edges.append(Route(neighbor: toMetro, weight: weight))
-            toMetro.edges.append(Route(neighbor: fromMetro, weight: weight))
+            fromMetro.edges.append(Route(neighbor: toMetro, weight: timeInterval))
+            toMetro.edges.append(Route(neighbor: fromMetro, weight: timeInterval))
         }
     }
     

@@ -219,8 +219,6 @@
 		F5BACBEE1EAEFC540081A84B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */,
-				F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */,
 				F57F9CC91EB22AEA00133191 /* MetroStation.swift */,
 				F53FCE0E1EB780FF00F9BF38 /* Route.swift */,
 				F57F9CCD1EB245F800133191 /* RoutePoint.swift */,
@@ -245,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				F5BACBE21EAEFB450081A84B /* Assets.xcassets */,
+				F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */,
+				F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */,
 				F5BACBE71EAEFB450081A84B /* Info.plist */,
 				F51169AC1EB8A303004DF356 /* Localizable.strings */,
 			);
