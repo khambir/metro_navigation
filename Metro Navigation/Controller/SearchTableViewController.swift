@@ -35,6 +35,7 @@ class SearchTableViewController: UITableViewController {
         super.viewDidLoad()
         initCell()
         navigationItem.titleView = searchBar
+        searchBar.becomeFirstResponder()
         geolocationManager.geoManagerDelegate = self
         tableView.hideBottomEmptyCells()
     }
