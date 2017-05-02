@@ -66,13 +66,13 @@
 		F51169891EB8862F004DF356 /* AppleMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMapsUtil.swift; sourceTree = "<group>"; };
 		F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapsUtil.swift; sourceTree = "<group>"; };
 		F51169961EB89EBF004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RouteViewController.storyboard; sourceTree = "<group>"; };
-		F51169981EB89EE5004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RouteViewController.strings; sourceTree = "<group>"; };
+		F51169981EB89EE5004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RouteViewController.storyboard; sourceTree = "<group>"; };
 		F511699A1EB89F27004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SearchTableViewController.storyboard; sourceTree = "<group>"; };
-		F511699D1EB89F2B004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SearchTableViewController.strings; sourceTree = "<group>"; };
+		F511699D1EB89F2B004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/SearchTableViewController.storyboard; sourceTree = "<group>"; };
 		F511699F1EB8A103004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/StationPopUpView.xib; sourceTree = "<group>"; };
-		F51169A21EB8A106004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/StationPopUpView.strings; sourceTree = "<group>"; };
+		F51169A21EB8A106004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/StationPopUpView.xib; sourceTree = "<group>"; };
 		F51169A41EB8A14F004DF356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/RoutePanelView.xib; sourceTree = "<group>"; };
-		F51169A71EB8A151004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RoutePanelView.strings; sourceTree = "<group>"; };
+		F51169A71EB8A151004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/RoutePanelView.xib; sourceTree = "<group>"; };
 		F51169AB1EB8A303004DF356 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F51169AD1EB8A305004DF356 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F51169AE1EB8A321004DF356 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -82,13 +82,13 @@
 		F53FCE081EB77F6200F9BF38 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		F53FCE0A1EB7803C00F9BF38 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		F53FCE0C1EB7805500F9BF38 /* DijkstraAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DijkstraAlgorithm.swift; sourceTree = "<group>"; };
-		F53FCE0E1EB780FF00F9BF38 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Route.swift; path = "Metro Navigation/Tools/Route.swift"; sourceTree = SOURCE_ROOT; };
-		F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyivMetroRoutes.plist; path = "Metro Navigation/Tools/kyivMetroRoutes.plist"; sourceTree = SOURCE_ROOT; };
+		F53FCE0E1EB780FF00F9BF38 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kyivMetroRoutes.plist; sourceTree = "<group>"; };
 		F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = kyivMetroStations.plist; path = "Metro Navigation/kyivMetroStations.plist"; sourceTree = SOURCE_ROOT; };
-		F57F9CC91EB22AEA00133191 /* MetroStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MetroStation.swift; path = "Metro Navigation/MetroStation.swift"; sourceTree = SOURCE_ROOT; };
+		F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = kyivMetroStations.plist; sourceTree = "<group>"; };
+		F57F9CC91EB22AEA00133191 /* MetroStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroStation.swift; sourceTree = "<group>"; };
 		F57F9CCB1EB2389400133191 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
-		F57F9CCD1EB245F800133191 /* RoutePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoutePoint.swift; path = "Metro Navigation/Tools/RoutePoint.swift"; sourceTree = SOURCE_ROOT; };
+		F57F9CCD1EB245F800133191 /* RoutePoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePoint.swift; sourceTree = "<group>"; };
 		F5BACBD81EAEFB450081A84B /* Metro Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Metro Navigation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5BACBE21EAEFB450081A84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,33 +113,33 @@
 		A80A47041EB35C2B002A1324 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A80A47001EB35C18002A1324 /* SearchStantionTableViewCell.xib */,
-				A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */,
 				F51169731EB7BD7A004DF356 /* RouteStationTableViewCell.swift */,
 				F51169751EB7BD85004DF356 /* RouteStationTableViewCell.xib */,
+				A80A47021EB35C22002A1324 /* SearchStantionTableViewCell.swift */,
+				A80A47001EB35C18002A1324 /* SearchStantionTableViewCell.xib */,
 			);
-			name = Cells;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		F511697B1EB86AC3004DF356 /* StationPopUp */ = {
 			isa = PBXGroup;
 			children = (
-				F51169A01EB8A103004DF356 /* StationPopUpView.xib */,
 				F511697E1EB86CB6004DF356 /* StationPopUpView.swift */,
+				F51169A01EB8A103004DF356 /* StationPopUpView.xib */,
 			);
-			name = StationPopUp;
+			path = StationPopUp;
 			sourceTree = "<group>";
 		};
 		F51169821EB88597004DF356 /* LocationUtil */ = {
 			isa = PBXGroup;
 			children = (
+				F51169891EB8862F004DF356 /* AppleMapsUtil.swift */,
+				F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */,
 				F51169831EB885A9004DF356 /* LocationUtil.swift */,
 				F51169851EB8860D004DF356 /* YandexMapsUtil.swift */,
 				F51169871EB8861F004DF356 /* YandexNavigatorUtil.swift */,
-				F51169891EB8862F004DF356 /* AppleMapsUtil.swift */,
-				F511698B1EB8863C004DF356 /* GoogleMapsUtil.swift */,
 			);
-			name = LocationUtil;
+			path = LocationUtil;
 			sourceTree = "<group>";
 		};
 		F51F46471EAFBB8D0040903E /* RoutePanel */ = {
@@ -148,32 +148,32 @@
 				F51F46451EAFB9760040903E /* RoutePanelView.swift */,
 				F51169A51EB8A14F004DF356 /* RoutePanelView.xib */,
 			);
-			name = RoutePanel;
+			path = RoutePanel;
 			sourceTree = "<group>";
 		};
 		F53FCE051EB77EFA00F9BF38 /* DijkstraAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				F53FCE061EB77F4B00F9BF38 /* Vertex.swift */,
+				F53FCE0C1EB7805500F9BF38 /* DijkstraAlgorithm.swift */,
 				F53FCE081EB77F6200F9BF38 /* Edge.swift */,
 				F53FCE0A1EB7803C00F9BF38 /* Path.swift */,
-				F53FCE0C1EB7805500F9BF38 /* DijkstraAlgorithm.swift */,
+				F53FCE061EB77F4B00F9BF38 /* Vertex.swift */,
 			);
-			name = DijkstraAlgorithm;
+			path = DijkstraAlgorithm;
 			sourceTree = "<group>";
 		};
 		F57F9CC21EB1AB9400133191 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */,
-				F51169791EB86361004DF356 /* TimeIntervalExtension.swift */,
 				F51169771EB85B43004DF356 /* DateExtension.swift */,
+				F51169AE1EB8A321004DF356 /* StringExtension.swift */,
+				F51169791EB86361004DF356 /* TimeIntervalExtension.swift */,
+				F57F9CC31EB1ABB300133191 /* UIColorExtension.swift */,
 				F57F9CCB1EB2389400133191 /* UILabelExtension.swift */,
 				A80A47051EB364DB002A1324 /* UITableViewExtension.swift */,
 				F51169801EB87315004DF356 /* UIViewExtension.swift */,
-				F51169AE1EB8A321004DF356 /* StringExtension.swift */,
 			);
-			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F5BACBCF1EAEFB450081A84B = {
@@ -196,13 +196,11 @@
 			isa = PBXGroup;
 			children = (
 				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
-				F51F464A1EB11F180040903E /* GeolocationManager.swift */,
-				F51169711EB7A0AA004DF356 /* MetroNavigation.swift */,
 				F5BACBED1EAEFC480081A84B /* Controller */,
-				F5BACBEF1EAEFC590081A84B /* View */,
 				F5BACBEE1EAEFC540081A84B /* Model */,
-				F5BACBF91EAF00520081A84B /* Tools */,
 				F5BACBF01EAEFC820081A84B /* Resources */,
+				F5BACBF91EAF00520081A84B /* Tools */,
+				F5BACBEF1EAEFC590081A84B /* View */,
 			);
 			path = "Metro Navigation";
 			sourceTree = "<group>";
@@ -229,9 +227,9 @@
 		F5BACBEF1EAEFC590081A84B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A80A47041EB35C2B002A1324 /* Cells */,
 				F51F46471EAFBB8D0040903E /* RoutePanel */,
 				F511697B1EB86AC3004DF356 /* StationPopUp */,
-				A80A47041EB35C2B002A1324 /* Cells */,
 				F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */,
 				F51169971EB89EBF004DF356 /* RouteViewController.storyboard */,
 				F511699B1EB89F27004DF356 /* SearchTableViewController.storyboard */,
@@ -243,10 +241,10 @@
 			isa = PBXGroup;
 			children = (
 				F5BACBE21EAEFB450081A84B /* Assets.xcassets */,
-				F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */,
-				F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */,
 				F5BACBE71EAEFB450081A84B /* Info.plist */,
 				F51169AC1EB8A303004DF356 /* Localizable.strings */,
+				F53FCE101EB78AFA00F9BF38 /* kyivMetroRoutes.plist */,
+				F57F9CC71EB22ABF00133191 /* kyivMetroStations.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -254,10 +252,12 @@
 		F5BACBF91EAF00520081A84B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				F51169821EB88597004DF356 /* LocationUtil */,
-				F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */,
 				F53FCE051EB77EFA00F9BF38 /* DijkstraAlgorithm */,
 				F57F9CC21EB1AB9400133191 /* Extensions */,
+				F51169821EB88597004DF356 /* LocationUtil */,
+				F51F464A1EB11F180040903E /* GeolocationManager.swift */,
+				F51169711EB7A0AA004DF356 /* MetroNavigation.swift */,
+				F5BACBFA1EAF007D0081A84B /* SegueHandler.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -386,6 +386,7 @@
 				F51169981EB89EE5004DF356 /* ru */,
 			);
 			name = RouteViewController.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F511699B1EB89F27004DF356 /* SearchTableViewController.storyboard */ = {
@@ -395,6 +396,7 @@
 				F511699D1EB89F2B004DF356 /* ru */,
 			);
 			name = SearchTableViewController.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F51169A01EB8A103004DF356 /* StationPopUpView.xib */ = {
@@ -404,6 +406,7 @@
 				F51169A21EB8A106004DF356 /* ru */,
 			);
 			name = StationPopUpView.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F51169A51EB8A14F004DF356 /* RoutePanelView.xib */ = {
@@ -413,6 +416,7 @@
 				F51169A71EB8A151004DF356 /* ru */,
 			);
 			name = RoutePanelView.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F51169AC1EB8A303004DF356 /* Localizable.strings */ = {
@@ -422,6 +426,7 @@
 				F51169AD1EB8A305004DF356 /* ru */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		F5BACBE41EAEFB450081A84B /* LaunchScreen.storyboard */ = {
