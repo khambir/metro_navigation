@@ -198,9 +198,9 @@
 				F5BACBDB1EAEFB450081A84B /* AppDelegate.swift */,
 				F5BACBED1EAEFC480081A84B /* Controller */,
 				F5BACBEE1EAEFC540081A84B /* Model */,
-				F5BACBF01EAEFC820081A84B /* Resources */,
-				F5BACBF91EAF00520081A84B /* Tools */,
 				F5BACBEF1EAEFC590081A84B /* View */,
+				F5BACBF91EAF00520081A84B /* Tools */,
+				F5BACBF01EAEFC820081A84B /* Resources */,
 			);
 			path = "Metro Navigation";
 			sourceTree = "<group>";
